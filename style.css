@@ -1,6 +1,6 @@
 /* ============================================================
-                    GENERAL SETTINGS
-    ========================================================== */
+                     GENERAL SETTINGS
+============================================================ */
 
 * {
   margin: 0;
@@ -18,21 +18,14 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* =============================================================
-                      NAVIGATION BAR
-                  make colored line on top
-  =============================================================== */
+/* ============================================================
+                     NAVIGATION BAR
+============================================================ */
 
 .navbar {
   background-color: #111;
   padding: 10px 0;
 }
-
-/* ==============================================================
-                          YOUR LOGO
-  ============================================================== */
-
-/* it make logos size small on top */
 
 .logo-image {
   width: 155px;
@@ -40,15 +33,10 @@ body {
   display: block;
 }
 
-/* NAVIGATION LINKS
-    make link visible */
-
 .navbar-nav {
   align-items: center;
   gap: 12px;
 }
-
-/* after HOME on top, it make other text visible */
 
 .nav-link {
   color: white !important;
@@ -56,49 +44,38 @@ body {
   font-size: 12px;
 }
 
-/* this is for HOME on top */
-
 .nav-link:hover,
 .nav-link.active {
   color: #d4a640 !important;
 }
 
-/* for background of BOOK BUTTON */
-
 .book-button {
   background-color: #d4a640;
   color: white;
   padding: 10px 17px;
-  border-radius: 1px;
+  border-radius: 3px;
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-size: 12px;
+  display: inline-block;
 }
 
-.book-button:hover {
+.book-button:hover,
+.book-button.active {
   background-color: #b88a2f;
   color: white;
 }
 
-/* =============================================================================
-                                1ST PAGE / HERO
-  =============================================================================== */
-
-/* make gap after link - BOOK AN ORDER / JOIN CLASSES */
+/* ============================================================
+                     HOME HERO
+============================================================ */
 
 .hero-section {
   min-height: 430px;
-
-  /* space after logo */
   padding-top: 100px;
 
   display: flex;
   align-items: center;
-
-  /* =========================================================================
-                      OUR FIRST PAGE IMAGE
-                        PUT IMAGE HERE
-    ========================================================================== */
 
   background-image:
     linear-gradient(
@@ -146,7 +123,9 @@ body {
   margin-top: 15px;
 }
 
-/* HERO BUTTONS */
+/* ============================================================
+                     BUTTONS
+============================================================ */
 
 .hero-buttons {
   display: flex;
@@ -186,9 +165,14 @@ body {
   color: white;
 }
 
-/* ===============================================================================
-  GENERAL SECTIONS
-  ================================================================================ */
+.home-more-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* ============================================================
+                     GENERAL SECTIONS
+============================================================ */
 
 section {
   padding: 30px 0;
@@ -217,9 +201,9 @@ section {
   margin-right: auto;
 }
 
-/* ============================================================================
-                        ABOUT ME
-  ============================================================================== */
+/* ============================================================
+                     ABOUT ME
+============================================================ */
 
 .about-section {
   background-color: #faf7f2;
@@ -231,10 +215,9 @@ section {
   line-height: 1.7;
 }
 
-/* =============================================================================
-                        OUR VIDEO
-    This controls the video that replaces your circled picture.
-  ============================================================================= */
+/* ============================================================
+                     ABOUT VIDEO
+============================================================ */
 
 .about-video-box {
   width: 100%;
@@ -250,9 +233,9 @@ section {
   object-fit: cover;
 }
 
-/* =============================================================================
-      STUDIO CARD
-  ============================================================================= */
+/* ============================================================
+                     STUDIO CARD
+============================================================ */
 
 .studio-card {
   border: 1px solid #d9c69e;
@@ -261,20 +244,11 @@ section {
   min-height: 190px;
 }
 
-/* ============================================================
-                STUDIO ICON / ICON2.PNG
-    ============================================================ */
-
-/* This makes your icon2 image smaller and centered */
-
 .studio-symbol {
   color: #d4a640;
   font-size: 40px;
   text-align: center;
 }
-
-/* IMPORTANT:
-    This controls the actual icon2.png image */
 
 .studio-symbol img {
   width: 110px;
@@ -283,8 +257,6 @@ section {
   margin: 0 auto 10px auto;
   object-fit: contain;
 }
-
-/* Studio card heading */
 
 .studio-card h2 {
   font-size: 23px;
@@ -300,12 +272,6 @@ section {
   margin-top: 15px;
 }
 
-/* ============================================================
-                      HEART ICON
-    ============================================================ */
-
-/* This replaces @heartshape */
-
 .heart-icon {
   color: #d4a640;
   font-size: 22px;
@@ -313,9 +279,9 @@ section {
   display: inline-block;
 }
 
-/* ======================================================================
-    SERVICES
-  ======================================================================= */
+/* ============================================================
+                     SERVICES
+============================================================ */
 
 .services-section {
   background-color: #faf7f2;
@@ -333,7 +299,7 @@ section {
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0.5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-card i {
@@ -352,9 +318,9 @@ section {
   line-height: 1.5;
 }
 
-/* ==========================================================================
-    WHY CHOOSE US
-  =========================================================================== */
+/* ============================================================
+                     WHY CHOOSE US
+============================================================ */
 
 .why-section {
   background-color: #102b29;
@@ -386,9 +352,9 @@ section {
   font-size: 11px;
 }
 
-/* ===========================================================================
-  GALLERY
-  =========================================================================== */
+/* ============================================================
+                     GALLERY
+============================================================ */
 
 .gallery-section {
   background-color: #faf7f2;
@@ -407,9 +373,9 @@ section {
   transform: scale(1.03);
 }
 
-/* ==================================================================
-    REVIEWS
-  ==================================================================== */
+/* ============================================================
+                     REVIEWS
+============================================================ */
 
 .reviews-section {
   background-color: #faf7f2;
@@ -459,9 +425,9 @@ section {
   font-size: 20px;
 }
 
-/* ==========================================================================
-    CONTACT
-  ============================================================================ */
+/* ============================================================
+                     CONTACT
+============================================================ */
 
 .contact-section {
   background-color: #faf7f2;
@@ -476,24 +442,28 @@ section {
 .contact-info i {
   font-size: 22px;
   margin-right: 15px;
+  color: #b8862b;
 }
 
 form input,
-form textarea {
+form textarea,
+form select {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 12px;
   font-family: Arial, sans-serif;
   font-size: 12px;
+  background-color: white;
 }
 
 form textarea {
-  resize: none;
+  resize: vertical;
 }
 
 form input:focus,
-form textarea:focus {
+form textarea:focus,
+form select:focus {
   outline: none;
   border-color: #d4a640;
 }
@@ -506,15 +476,17 @@ form textarea:focus {
   padding: 10px 35px;
   font-family: Arial, sans-serif;
   font-size: 12px;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 .send-button:hover {
   background-color: #333;
 }
 
-/* =========================================================================
-    FOOTER
-  ========================================================================== */
+/* ============================================================
+                     FOOTER
+============================================================ */
 
 footer {
   background-color: #111;
@@ -528,15 +500,13 @@ footer {
   align-items: center;
 }
 
-.footer-logo strong {
-  display: block;
-  color: #d4a640;
-  font-size: 20px;
-  font-style: italic;
-}
+/* SMALL FOOTER LOGO */
 
-.footer-logo small {
-  font-size: 9px;
+.footer-logo img {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .footer-content p {
@@ -559,59 +529,62 @@ footer {
   color: white;
 }
 
-/* ==========================================================================
-    MOBILE
-  =========================================================================== */
+/* ============================================================
+                     INNER PAGE HERO
+============================================================ */
 
-@media (max-width: 767px) {
-  .navbar {
-    padding-top: 15px;
-  }
+.inner-page-hero {
+  min-height: 330px;
+  padding-top: 100px;
 
-  .book-button {
-    display: inline-block;
-    margin-top: 10px;
-  }
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-  .hero-section {
-    min-height: 550px;
-    padding-top: 110px;
-  }
+  background:
+    linear-gradient(rgba(250, 247, 242, 0.92), rgba(250, 247, 242, 0.92)),
+    url("tailoring image/Image1.jpeg");
 
-  .hero-section h1 {
-    font-size: 38px;
-  }
-
-  .welcome {
-    font-size: 27px;
-  }
-
-  .about-video-box {
-    height: 250px;
-    margin-bottom: 25px;
-  }
-
-  /* Make studio icon smaller on phone */
-
-  .studio-symbol img {
-    width: 90px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-  }
+  background-size: cover;
+  background-position: center;
 }
 
-/* =========================================================================
-    ABOUT PAGE
-  ========================================================================= */
+.inner-page-hero .container {
+  width: 100%;
+}
+
+.inner-page-hero p {
+  color: #c99b3c;
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.inner-page-hero h1 {
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+.inner-page-hero span {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* ============================================================
+                     INNER PAGE CONTENT
+============================================================ */
+
+.page-content {
+  padding: 70px 0;
+  min-height: 500px;
+}
+
+/* ============================================================
+                     ABOUT PAGE
+============================================================ */
 
 .about-page {
-  padding-top: 120px;
-  padding-bottom: 80px;
-  min-height: 80px;
+  padding: 80px 0;
 }
 
 .second-page-image {
@@ -621,9 +594,9 @@ footer {
   border-radius: 8px;
 }
 
-.about-page h1 {
-  font-size: 42px;
-  line-height: 1.1;
+.about-page h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
 .about-page p {
@@ -637,21 +610,140 @@ footer {
   font-size: 22px;
   margin-top: 25px;
   margin-bottom: 15px;
+  color: #b8862b;
 }
 
-/* ==========================================================================
-    RESPONSIVE DESIGN
-    Works on phones, tablets, laptops and large screens
-  ========================================================================== */
+/* ============================================================
+                     LARGE SERVICE CARDS
+============================================================ */
 
-/* =========================
-    TABLETS
-    768px - 991px
-  ========================= */
+.large-service-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 35px 20px;
+  min-height: 260px;
+  transition: 0.3s;
+}
+
+.large-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.large-service-card i {
+  color: #d4a640;
+  font-size: 45px;
+}
+
+.large-service-card h3 {
+  font-size: 17px;
+  margin: 20px 0 12px;
+}
+
+.large-service-card p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ============================================================
+                     CLASS CARDS
+============================================================ */
+
+.class-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 35px;
+  min-height: 350px;
+  transition: 0.3s;
+}
+
+.class-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.class-card i {
+  color: #d4a640;
+  font-size: 45px;
+}
+
+.class-card h3 {
+  font-size: 20px;
+  margin: 20px 0 15px;
+}
+
+.class-card p,
+.class-card li {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.class-card ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+/* ============================================================
+                     FULL GALLERY
+============================================================ */
+
+.full-gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: 0.3s;
+}
+
+.full-gallery-image:hover {
+  transform: scale(1.02);
+}
+
+/* ============================================================
+                     LARGE CONTACT
+============================================================ */
+
+.large-contact {
+  margin-top: 30px;
+}
+
+.large-contact p {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* ============================================================
+                     ORDER PAGE
+============================================================ */
+
+.order-container {
+  max-width: 800px;
+}
+
+.order-intro {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+#orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ============================================================
+                     TABLETS
+============================================================ */
 
 @media (max-width: 991px) {
-  /* NAVIGATION */
-
   .navbar {
     padding: 10px 15px;
   }
@@ -669,8 +761,6 @@ footer {
     display: inline-block;
     margin-top: 10px;
   }
-
-  /* HERO */
 
   .hero-section {
     min-height: 500px;
@@ -691,8 +781,6 @@ footer {
     font-size: 28px;
   }
 
-  /* ABOUT SECTION */
-
   .about-section {
     padding-left: 20px;
     padding-right: 20px;
@@ -703,8 +791,6 @@ footer {
     margin-bottom: 25px;
   }
 
-  /* STUDIO CARD */
-
   .studio-card {
     margin-top: 25px;
   }
@@ -713,38 +799,27 @@ footer {
     width: 100px;
   }
 
-  /* SERVICES */
-
   .service-card {
     margin-bottom: 15px;
   }
 
-  /* GALLERY */
-
   .gallery-image {
     height: 150px;
   }
-
-  /* FOOTER */
 
   .footer-content {
     padding: 0 20px;
   }
 }
 
-/* =========================
-    MOBILE PHONES
-    767px and below
-  ========================= */
+/* ============================================================
+                     MOBILE
+============================================================ */
 
 @media (max-width: 767px) {
-  /* GENERAL */
-
   section {
     padding: 40px 0;
   }
-
-  /* NAVIGATION */
 
   .navbar {
     padding: 8px 15px;
@@ -769,8 +844,6 @@ footer {
     font-size: 12px;
     padding: 9px 15px;
   }
-
-  /* HERO SECTION */
 
   .hero-section {
     min-height: 600px;
@@ -801,8 +874,6 @@ footer {
     font-size: 13px;
   }
 
-  /* HERO BUTTONS */
-
   .hero-buttons {
     flex-direction: column;
     gap: 10px;
@@ -815,13 +886,9 @@ footer {
     width: 100%;
   }
 
-  /* SECTION TITLES */
-
   .section-title {
     font-size: 21px;
   }
-
-  /* ABOUT SECTION */
 
   .about-section {
     padding-left: 15px;
@@ -839,8 +906,6 @@ footer {
     height: 100%;
     object-fit: cover;
   }
-
-  /* STUDIO CARD */
 
   .studio-card {
     width: 100%;
@@ -870,8 +935,6 @@ footer {
     font-size: 20px;
   }
 
-  /* SERVICES */
-
   .service-card {
     margin-bottom: 15px;
     min-height: auto;
@@ -882,8 +945,6 @@ footer {
     font-size: 30px;
   }
 
-  /* WHY CHOOSE US */
-
   .why-item {
     padding: 15px 5px;
   }
@@ -892,21 +953,15 @@ footer {
     font-size: 30px;
   }
 
-  /* GALLERY */
-
   .gallery-image {
     width: 100%;
     height: 130px;
   }
 
-  /* REVIEWS */
-
   .review-card {
     padding: 25px 45px;
     margin-bottom: 15px;
   }
-
-  /* CONTACT */
 
   .contact-info {
     margin-bottom: 30px;
@@ -917,7 +972,8 @@ footer {
   }
 
   form input,
-  form textarea {
+  form textarea,
+  form select {
     font-size: 13px;
   }
 
@@ -936,15 +992,61 @@ footer {
     padding: 0 15px;
   }
 
+  /* FOOTER LOGO ON PHONE */
+
+  .footer-logo img {
+    width: 100px;
+  }
+
   .social-icons {
     justify-content: center;
   }
+
+  /* INNER PAGE */
+
+  .inner-page-hero {
+    min-height: 280px;
+    padding: 110px 20px 40px;
+  }
+
+  .inner-page-hero h1 {
+    font-size: 35px;
+  }
+
+  .inner-page-hero p {
+    font-size: 20px;
+  }
+
+  .about-page {
+    padding: 50px 15px;
+  }
+
+  .second-page-image {
+    height: 300px;
+  }
+
+  .page-content {
+    padding: 50px 15px;
+  }
+
+  .large-service-card {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .class-card {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .full-gallery-image {
+    height: 250px;
+  }
 }
 
-/* =========================
-    VERY SMALL PHONES
-    480px and below
-  ========================= */
+/* ============================================================
+                     VERY SMALL PHONES
+============================================================ */
 
 @media (max-width: 480px) {
   .logo-image {
@@ -991,12 +1093,23 @@ footer {
   .review-card {
     padding: 25px 35px;
   }
+
+  .inner-page-hero h1 {
+    font-size: 30px;
+  }
+
+  .full-gallery-image {
+    height: 220px;
+  }
+
+  .footer-logo img {
+    width: 90px;
+  }
 }
 
-/* =========================
-    LARGE LAPTOP / DESKTOP
-    1200px and above
-  ========================= */
+/* ============================================================
+                     LARGE LAPTOP / DESKTOP
+============================================================ */
 
 @media (min-width: 1200px) {
   .hero-section {

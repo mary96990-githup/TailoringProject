@@ -1,126 +1,168 @@
-// this is the page that open when you click ABOUT or READ MORE.
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Mary's Tailoring Studio</title>
 
-    <!-- Bootstrap -->
+    <title>About | Mary's Tailoring Studio</title>
 
     <link
-      href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/nmp/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
-    <!-- Same CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- ========================================================================
-        NAVBAR 
-    =========================================================================-->
 
-    <nav class="navbar navbar-expand-lg">
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <!-- LOGO -->
         <a class="navbar-brand" href="index.html">
           <img
-            src="images/logo.png"
-            alt="Mary's Tailoring Studio logo"
+            src="tailoring image/Logo2.png"
+            alt="Mary's Tailoring Studio Logo"
             class="logo-image"
           />
         </a>
 
-        <!-- MENU -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div>
-          <a class="nav-link d-inline-block" href="index.html"> HOME </a>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
 
-          <a class="nav-link d-inline-block" href="about.html"> ABOUT </a>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">ABOUT</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">SERVICES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">CLASSES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="book-button" href="order.html"> BOOK AN ORDER </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <!-- =====================================================================
-        SECOND PAGE 
-        ====================================================================-->
+    <!-- PAGE TITLE -->
+
+    <section class="inner-page-hero">
+      <div class="container">
+        <p>Get to Know Me</p>
+
+        <h1>ABOUT ME</h1>
+
+        <span> Where Every Stitch Tells a Story </span>
+      </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
 
     <section class="about-page">
       <div class="container">
-        <div class="row align-items-center">
-          <!-- ===========================================================
-                 SECOND PAGE IMAGE 
-                 
-                 PUT YOUR SECOND PAGE IMAGE HERE: 
-                 images/about.jpg
-                 ============================================================-->
+        <div class="row align-items-center g-5">
           <div class="col-lg-6">
             <img
-              src="images/about.jpg"
-              alt="Mary's Tailoring Studio"
+              src="tailoring image/Image1.jpeg"
               class="second-page-image"
+              alt="Mary's Tailoring Studio"
             />
           </div>
 
-          <!-- ===========================================================
-                      SECOND PAGE TEXT 
-                      =========================================================-->
-
           <div class="col-lg-6">
-            <h1>
-              ABOUT MARY'S
-              <br />
-              TAILORING STUDIO
-            </h1>
+            <h2>MY STORY</h2>
 
             <p>
-              Welcome to Mary's Tailoring Studio. We specialize in custom
-              stitching, dress design, alterations and professional tailoting
-              classes.
+              I'm Mary, a professional tailor and instructor with years of
+              experience in stitching and design.
             </p>
 
             <p>
-              Our goal is to create beautiful clothing with excellent fitting
-              quality workmanship.
+              At Mary's Tailoring Studio, I provide custom stitching services,
+              dress design, alterations and professional tailoring classes.
             </p>
-
-            <h3>Our experience</h3>
 
             <p>
-              With years of experience in tailoring and teaching. we help our
-              students learne tailoring step by step
+              I believe that every outfit should be comfortable, beautiful and
+              made with attention to detail.
             </p>
 
-            <!--  BACK TO HOME  -->
-            <a href="index.html" class="black-button"> BACK TO HOME </a>
+            <h3>MY MISSION</h3>
+
+            <p>
+              My mission is to provide quality tailoring services and help
+              people learn practical tailoring skills in a friendly environment.
+            </p>
+
+            <a href="order.html" class="black-button"> BOOK AN ORDER </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- =========================================================
-             FOOTER 
-        ============================================================-->
+    <!-- FOOTER -->
+
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <strong> Mary's </strong>
-
-            <small> TAILORING STUDIO </small>
+            <img
+              src="tailoring image/Logo2.png"
+              alt="Mary's Tailoring Studio"
+            />
           </div>
 
-          <p>@c 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
+          <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
