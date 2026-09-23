@@ -1,4 +1,7 @@
-/* =============== GENERAL ===================== */
+/* ============================================================
+                    GENERAL SETTINGS
+    ========================================================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +13,1005 @@ html {
 }
 
 body {
+  background-color: #faf7f2;
+  color: #222;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* =============================================================
+                      NAVIGATION BAR
+                  make colored line on top
+  =============================================================== */
+
+.navbar {
+  background-color: #111;
+  padding: 10px 0;
+}
+
+/* ==============================================================
+                          YOUR LOGO
+  ============================================================== */
+
+/* it make logos size small on top */
+
+.logo-image {
+  width: 155px;
+  height: auto;
+  display: block;
+}
+
+/* NAVIGATION LINKS
+    make link visible */
+
+.navbar-nav {
+  align-items: center;
+  gap: 12px;
+}
+
+/* after HOME on top, it make other text visible */
+
+.nav-link {
+  color: white !important;
   font-family: Arial, sans-serif;
-  color: #171717;
-  background: #fffdf9;
+  font-size: 12px;
+}
+
+/* this is for HOME on top */
+
+.nav-link:hover,
+.nav-link.active {
+  color: #d4a640 !important;
+}
+
+/* for background of BOOK BUTTON */
+
+.book-button {
+  background-color: #d4a640;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 1px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.book-button:hover {
+  background-color: #b88a2f;
+  color: white;
+}
+
+/* =============================================================================
+                                1ST PAGE / HERO
+  =============================================================================== */
+
+/* make gap after link - BOOK AN ORDER / JOIN CLASSES */
+
+.hero-section {
+  min-height: 430px;
+
+  /* space after logo */
+  padding-top: 100px;
+
+  display: flex;
+  align-items: center;
+
+  /* =========================================================================
+                      OUR FIRST PAGE IMAGE
+                        PUT IMAGE HERE
+    ========================================================================== */
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(250, 247, 242, 0.98),
+      rgba(250, 240, 242, 0.8),
+      rgba(250, 247, 242, 0.15)
+    ),
+    url("tailoring image/Image1.jpeg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.welcome {
+  color: #c99b3c;
+  font-size: 32px;
+  font-style: italic;
+}
+
+.hero-section h1 {
+  font-size: 58px;
+  line-height: 0.95;
+  letter-spacing: 2px;
+}
+
+.hero-section h3 {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.hero-section h3 span {
+  color: #c99b3c;
+  padding: 0 5px;
+}
+
+.hero-text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.black-button {
+  display: inline-block;
+  background-color: #171717;
+  color: white;
+  text-decoration: none;
+  padding: 10px 24px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.black-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.gold-button {
+  display: inline-block;
+  background-color: #d4a640;
+  color: white;
+  text-decoration: none;
+  padding: 10px 24px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.gold-button:hover {
+  background-color: #b88a2f;
+  color: white;
+}
+
+/* ===============================================================================
+  GENERAL SECTIONS
+  ================================================================================ */
+
+section {
+  padding: 30px 0;
+}
+
+.section-title {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.center-title {
+  text-align: center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #d4a640;
+  margin-top: 7px;
+}
+
+.center-title::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================================
+                        ABOUT ME
+  ============================================================================== */
+
+.about-section {
+  background-color: #faf7f2;
+}
+
+.about-section p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =============================================================================
+                        OUR VIDEO
+    This controls the video that replaces your circled picture.
+  ============================================================================= */
+
+.about-video-box {
+  width: 100%;
+  height: 205px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.about-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* =============================================================================
+      STUDIO CARD
+  ============================================================================= */
+
+.studio-card {
+  border: 1px solid #d9c69e;
+  text-align: center;
+  padding: 18px;
+  min-height: 190px;
+}
+
+/* ============================================================
+                STUDIO ICON / ICON2.PNG
+    ============================================================ */
+
+/* This makes your icon2 image smaller and centered */
+
+.studio-symbol {
+  color: #d4a640;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* IMPORTANT:
+    This controls the actual icon2.png image */
+
+.studio-symbol img {
+  width: 110px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  object-fit: contain;
+}
+
+/* Studio card heading */
+
+.studio-card h2 {
+  font-size: 23px;
+  margin: 5px 0;
+}
+
+.studio-card h4 {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.studio-card p {
+  margin-top: 15px;
+}
+
+/* ============================================================
+                      HEART ICON
+    ============================================================ */
+
+/* This replaces @heartshape */
+
+.heart-icon {
+  color: #d4a640;
+  font-size: 22px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* ======================================================================
+    SERVICES
+  ======================================================================= */
+
+.services-section {
+  background-color: #faf7f2;
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  text-align: center;
+  padding: 18px 12px;
+  min-height: 145px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0.5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+  color: #d4a640;
+  font-size: 32px;
+}
+
+.service-card h3 {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.service-card p {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+    WHY CHOOSE US
+  =========================================================================== */
+
+.why-section {
+  background-color: #102b29;
+  color: white;
+}
+
+.white-title {
+  color: white;
+}
+
+.why-item {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.why-item i {
+  color: #d4a640;
+  font-size: 35px;
+}
+
+.why-item h3 {
+  color: #d4a640;
+  font-size: 14px;
+}
+
+.why-item p {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* ===========================================================================
+  GALLERY
+  =========================================================================== */
+
+.gallery-section {
+  background-color: #faf7f2;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 7px;
+  display: block;
+  transition: 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
+
+/* ==================================================================
+    REVIEWS
+  ==================================================================== */
+
+.reviews-section {
+  background-color: #faf7f2;
+}
+
+.review-card {
+  position: relative;
+  background-color: white;
+  border: 1px solid #e0ddd6;
+  border-radius: 8px;
+  padding: 25px 60px;
+  min-height: 125px;
+}
+
+.quote {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #d4a640;
+  font-size: 45px;
+}
+
+.review-card p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.review-card strong {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.client-image {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+/* ==========================================================================
+    CONTACT
+  ============================================================================ */
+
+.contact-section {
+  background-color: #faf7f2;
+}
+
+.contact-info p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.contact-info i {
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #d4a640;
+}
+
+.send-button {
+  float: right;
+  border: none;
+  background-color: #171717;
+  color: white;
+  padding: 10px 35px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.send-button:hover {
+  background-color: #333;
+}
+
+/* =========================================================================
+    FOOTER
+  ========================================================================== */
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 17px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo strong {
+  display: block;
+  color: #d4a640;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.footer-logo small {
+  font-size: 9px;
+}
+
+.footer-content p {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #d4a640;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+
+/* ==========================================================================
+    MOBILE
+  =========================================================================== */
+
+@media (max-width: 767px) {
+  .navbar {
+    padding-top: 15px;
+  }
+
+  .book-button {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .hero-section {
+    min-height: 550px;
+    padding-top: 110px;
+  }
+
+  .hero-section h1 {
+    font-size: 38px;
+  }
+
+  .welcome {
+    font-size: 27px;
+  }
+
+  .about-video-box {
+    height: 250px;
+    margin-bottom: 25px;
+  }
+
+  /* Make studio icon smaller on phone */
+
+  .studio-symbol img {
+    width: 90px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* =========================================================================
+    ABOUT PAGE
+  ========================================================================= */
+
+.about-page {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  min-height: 80px;
+}
+
+.second-page-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-page h1 {
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.about-page p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-page h3 {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+    RESPONSIVE DESIGN
+    Works on phones, tablets, laptops and large screens
+  ========================================================================== */
+
+/* =========================
+    TABLETS
+    768px - 991px
+  ========================= */
+
+@media (max-width: 991px) {
+  /* NAVIGATION */
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-nav {
+    gap: 5px;
+    margin-top: 15px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .book-button {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  /* HERO */
+
+  .hero-section {
+    min-height: 500px;
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-section h1 {
+    font-size: 48px;
+  }
+
+  .welcome {
+    font-size: 28px;
+  }
+
+  /* ABOUT SECTION */
+
+  .about-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-video-box {
+    height: 250px;
+    margin-bottom: 25px;
+  }
+
+  /* STUDIO CARD */
+
+  .studio-card {
+    margin-top: 25px;
+  }
+
+  .studio-symbol img {
+    width: 100px;
+  }
+
+  /* SERVICES */
+
+  .service-card {
+    margin-bottom: 15px;
+  }
+
+  /* GALLERY */
+
+  .gallery-image {
+    height: 150px;
+  }
+
+  /* FOOTER */
+
+  .footer-content {
+    padding: 0 20px;
+  }
+}
+
+/* =========================
+    MOBILE PHONES
+    767px and below
+  ========================= */
+
+@media (max-width: 767px) {
+  /* GENERAL */
+
+  section {
+    padding: 40px 0;
+  }
+
+  /* NAVIGATION */
+
+  .navbar {
+    padding: 8px 15px;
+  }
+
+  .logo-image {
+    width: 125px;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+
+  .book-button {
+    margin-top: 8px;
+    font-size: 12px;
+    padding: 9px 15px;
+  }
+
+  /* HERO SECTION */
+
+  .hero-section {
+    min-height: 600px;
+    padding: 120px 20px 50px;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .welcome {
+    font-size: 25px;
+  }
+
+  .hero-section h1 {
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+
+  .hero-section h3 {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hero-text {
+    font-size: 13px;
+  }
+
+  /* HERO BUTTONS */
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .black-button,
+  .gold-button {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* SECTION TITLES */
+
+  .section-title {
+    font-size: 21px;
+  }
+
+  /* ABOUT SECTION */
+
+  .about-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-video-box {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 25px;
+  }
+
+  .about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* STUDIO CARD */
+
+  .studio-card {
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px 15px;
+  }
+
+  .studio-symbol img {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .studio-card h2 {
+    font-size: 22px;
+  }
+
+  .studio-card h4 {
+    font-size: 12px;
+  }
+
+  .studio-card p {
+    font-size: 13px;
+  }
+
+  .heart-icon {
+    font-size: 20px;
+  }
+
+  /* SERVICES */
+
+  .service-card {
+    margin-bottom: 15px;
+    min-height: auto;
+    padding: 20px 15px;
+  }
+
+  .service-card i {
+    font-size: 30px;
+  }
+
+  /* WHY CHOOSE US */
+
+  .why-item {
+    padding: 15px 5px;
+  }
+
+  .why-item i {
+    font-size: 30px;
+  }
+
+  /* GALLERY */
+
+  .gallery-image {
+    width: 100%;
+    height: 130px;
+  }
+
+  /* REVIEWS */
+
+  .review-card {
+    padding: 25px 45px;
+    margin-bottom: 15px;
+  }
+
+  /* CONTACT */
+
+  .contact-info {
+    margin-bottom: 30px;
+  }
+
+  .contact-info p {
+    font-size: 13px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 13px;
+  }
+
+  .send-button {
+    width: 100%;
+    float: none;
+    margin-top: 10px;
+  }
+
+  /* FOOTER */
+
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* =========================
+    VERY SMALL PHONES
+    480px and below
+  ========================= */
+
+@media (max-width: 480px) {
+  .logo-image {
+    width: 110px;
+  }
+
+  .hero-section {
+    min-height: 570px;
+    padding-top: 110px;
+  }
+
+  .welcome {
+    font-size: 22px;
+  }
+
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .hero-section h3 {
+    font-size: 14px;
+  }
+
+  .hero-text {
+    font-size: 12px;
+  }
+
+  .about-video-box {
+    height: 220px;
+  }
+
+  .studio-symbol img {
+    width: 80px;
+  }
+
+  .studio-card h2 {
+    font-size: 20px;
+  }
+
+  .gallery-image {
+    height: 110px;
+  }
+
+  .review-card {
+    padding: 25px 35px;
+  }
+}
+
+/* =========================
+    LARGE LAPTOP / DESKTOP
+    1200px and above
+  ========================= */
+
+@media (min-width: 1200px) {
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .hero-section h1 {
+    font-size: 62px;
+  }
+
+  .studio-symbol img {
+    width: 120px;
+  }
+
+  .about-video-box {
+    height: 260px;
+  }
 }

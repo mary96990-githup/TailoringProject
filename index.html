@@ -1,34 +1,983 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!--=====================================================================
+                  BASIC HTML SETTINGS 
+    ========================================================================-->
+    <!--Basic page informaation -->
     <meta charset="UTF-8" />
+
+    <!--Makes website work properly/responsive on phone/tablet-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    *// make website responsive on phone //*
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!--website title-->
     <title>Mary's Tailoring Studio</title>
+
+    
+
+    <!-- ================================================================
+                    BOOTSTRAP CSS 
+    ====================================================================-->
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
     />
 
+
+
+    <!-- ======================================================================
+                       BOOTSTRAP ICONS
+    =========================================================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+      href="https://cdnjs.icloudflare.com/libs/font-awesome/6.5.2/css/all.min.css">
 
+
+
+      <!-- =============================================================
+                        YOUR CSS FILE
+      =================================================================-->
     <link rel="stylesheet" href="style.css" />
 
-    <script src="script.js"></script>
+   <!--   <script src="script.js"></script>  check last page-->
   </head>
+  <body>
 
-  <img src="" />
 
-  <a href="about.html">About></a>
+    <!-- =========================================================
+          NAVIGATION BAR 
+         ===================================================== -->
 
-  <body></body>
+         <nav class="navbar navbar-expand-lg fixed-top">
+
+          <div class="container">
+
+            <!-- ======================================================
+                  YOUR LOGO 
+                  PUT YOUR LOGO IN:
+                  images/logo.png           
+            
+            need correction how to add   LOGO
+            =========================================================-->
+             <a class="navbar-brand" href="index.html">
+
+              <img
+              src="tailoring image/Logo2.png"
+              alt="Mary's Tailoring Studio Logo"
+              class="logo-image">
+
+             </a>
+
+
+             <!--  MOBILE MENUE BUTTON -->
+
+             <button
+             class="navbar-toggler"
+             type="button"
+             data-bs-toggle="collapse"
+             data-bs-target="#navbarMenu">
+
+
+             <span class="navbar-toggler-icon"></span>
+
+             </button>
+
+
+
+             <!-- =============================================================
+                                MENUE 
+              ===============================================================-->
+
+              <div 
+              class="collapse navbar-collapse"
+              id="navbarMenu">
+
+              <ul class="navbar-nav ms-auto">
+
+
+                <!--  HOME  -->
+                  <li class="nav-item">
+
+                    <a 
+                    class="nav-link active"
+                    href="index.html">
+
+                    HOME
+
+                    </a>
+
+                  </li>
+
+
+
+                  <!--   ABOUT     
+                     This Goes to the Second Page   -->
+
+                     <li class="nav-item">
+
+
+                      <!--  ====ABOUT ME page starts====  -->
+                     <a 
+                     class="nav-link"
+                     href="about.html">
+
+                     ABOUT
+
+                     </a>
+                     </li>
+
+
+                     <!--   SERVICES  -->
+                        <li class="nav-item">
+
+                          <a class="nav-link"
+                          href="#services">
+
+                          SERVICES
+                          </a>
+                        </li>
+
+
+                        <!--  CLASSES  -->
+                          <li class="nav-item">
+
+                            <a class="nav-link"
+                            href="#classes">
+
+                            CLASSES
+                            </a>
+                          </li>
+
+
+                          <!--  GALLERY  -->
+                            <li class="nav-item">
+
+                              <a 
+                              class="nav-link"
+                              href="#gallery">
+                              GALLERY
+                            </a>
+                            
+                            </li>
+
+
+                            <!--  CONTACT  -->
+                              <li class="nav-item">
+
+                              <a 
+                              class="nav-link"
+                              href="#contact">
+                              
+                              CONTACT
+                              </a>
+
+                              </li>
+
+
+
+                              <!--  BOOK BUTTON  -->
+                                <li class="nav-item">
+
+                                <a 
+                                class="book-button"
+                                href="#contact">
+
+                                BOOK AN ORDER
+                                </a>
+
+                                </li>
+
+              </ul>
+              </div>
+          </div>
+         </nav>
+
+
+         <!--  ============================================================
+            1ST PAGE / HOME PAGE,  LARGE HERO IMAGE 
+            put ur large home image in: images/hero.jpg
+            ============================================================-->
+
+            <section
+            id="home"
+            class="hero-section">
+
+            <div class="container">
+
+              <div class="hero-content">
+
+                <p class="welcome">
+                  Welcome to 
+                </p>
+
+                <h1>
+                  MARY'S 
+                  <br>
+                  TAILORING STUDIO
+                </h1>
+
+
+                <h3>
+
+                  Custom Stitching
+
+                  <span>.</span>
+
+                  Alterations
+
+                  <span>.</span>
+
+                  Tailoring classes
+
+                </h3>
+
+                <p class="hero-text">
+
+                We creat clothes that fit you perfectly
+                <br>
+                and makes you look beautiful.
+
+                </p>
+
+
+                <div class="hero-buttons">
+                  <a 
+                  href="#contact"
+                  class="black-button">
+
+                  BOOK AN ORDER
+                  </a>
+
+
+                  <a 
+                  href="#classes"
+                  class="gold-button">
+
+                  JOIN CLASSES
+
+                  </a>
+                </div>
+              </div>
+            </div>
+            </section>
+
+
+<!-- ===========================================================================
+ ABOUT ME SECTION 
+
+ 
+ your red circle pic is replaced by video 
+ =============================================================================-->
+              
+ <section
+ id="about"
+ class="about-section">
+
+ <div class="container">
+
+  <div class="row align-items-center">
+    
+
+    <!-- ===========================================================================
+     RED-CIRCLED AREA
+     YOUR VIDEO GOES HERE 
+     VIDEO LOCATION: 
+     video/tailoring-image.mp4
+     =============================================================================-->
+
+     <div class="col-lg-4">
+
+      <div class="about-video-box">
+
+
+        <video
+        class="about-video"
+        autoplay
+        muted
+        loop
+        playsinline >
+
+
+        <source 
+        src="tailoring image/video .mp4" 
+        type="video/mp4">
+
+        Your browser does not support video.
+
+        </video>
+
+      </div>
+      
+     </div>
+
+
+
+     <!-- =======================================================================
+                             ABOUT ME TEXT 
+      ========================================================================-->
+
+      <div class="col-lg-5">
+
+      <h2 class="section-title">
+        ABOUT ME 
+      </h2>
+
+      <P>
+        I'm Mary, a professional tailor and instructor with years of experience in stitching and design. 
+      </p>
+
+      <p>
+        At Mary'S Tailoring Studio, I provide custom stitching services and professional
+         tailoring classes for beginners to advanced level. 
+      </p>
+
+
+
+
+
+      <!--=========================================================================
+                                  GO TO 2ND PAGE 
+          When someone clicks READ MORE, it also opens about.html
+      ========================================================================= -->
+      <a 
+      href="about.html"
+      class="black-button">
+
+      READ MORE 
+      </a>
+
+  </div>
+
+
+
+  <!-- ===========================================================================
+    STUDIO CARD
+  
+  here give this type mark (^) and heart                        
+  =============================================================================-->
+  <div class="col-lg-3">
+
+    <div class="studio-card">
+
+      <div class="studio-symbol">
+
+       <img src="tailoring image/icon2.png" alt="Studio Icon">
+
+      </div>
+ 
+
+
+      <h2>
+        MARY'S
+      </h2>
+
+      <h4>
+        TAILORING STUDIO
+      </h4>
+
+      <p>
+        Where Every Stitch
+        <br>
+        Tells a Story
+
+      </p>
+
+    <i class="bi bi-heart-fill heart-icon"></i>
+
+    </div>
+
+  </div>
+
+ </div>
+ </div>
+
+ </section>
+
+
+
+ <!-- ====================================================================
+      OUR SERVICES 
+  ==================================================================== -->
+  <section
+  id="services"
+  class="service-section">
+
+  <div class="container">
+    <h2 class="section-title center-title">
+      OUR SERVICES
+    </h2>
+
+    <div class="row g-3">
+
+
+      <!-- CUSTOM STITCHING -->
+
+       <div class="col-lg-3 col-md-6">
+
+        <div class="service-card">
+
+          <i class="bi bi-person-workspace"></i>
+
+          <h3>
+            CUSTOM STITCHING
+          </h3>
+
+          <p>
+            Beautiful and perfectly stitched outfits for every occasion.
+          </p>
+
+        </div>
+
+       </div>
+
+
+
+       <!--     DRESS DESIGN    -->
+
+       <div class="col-lg-3 col-md-6">
+
+        <div class="service-card">
+
+          <i class="bi bi-person-standing-dress"></i>
+
+          <h3>
+            DRESS DESIGN 
+          </h3>
+
+
+          <p>
+            Unique design crafted as per your style and preference.
+          </p>
+
+        </div>
+
+       </div>
+
+
+
+       <!--   ALTERATIONS  -->
+
+       <div class="col-lg-3 col-md-6">
+
+        <div class="service-card">
+
+          <i class="bi bi-scissors"></i>
+
+          <h3>
+            ALTERATIONS
+          </h3>
+
+          <p>
+            We alter and resize outfits for the perfect fit and comfort.
+          </p>
+
+        </div>
+
+       </div>
+
+
+
+       <!--   TAILORING CLASSES   -->
+
+       <div 
+       id="classes"
+       class="col-lg-3 col-md-6">
+
+       <div class="service-card">
+
+        <i class="bi bi-mortarbord-fill"></i>
+
+        <h3>
+          TAILORING CLASSES 
+        </h3>
+
+        <p>
+          Learn tailoting step by step with our professional courses.
+        </p>
+
+       </div>
+
+       </div>
+
+    </div>
+
+  </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- =================================================================
+                         WHY CHOOSE US 
+    =================================================================-->
+    <section class="why-section">
+
+      <div class="container">
+
+        <h2 class="section-title white-title center-title">
+          WHY CHOOSE US?
+        </h2>
+
+
+        <div class="row">
+
+
+
+
+          <!--  PERFECT FIT  -->
+            <div class="col-lg-3 col-md-6">
+
+              <div class="why-item">
+
+                <i class="bi bi-rulers"></i>
+                
+              <div>
+
+
+              <h3>
+                PERFECT FIT
+              </h3>
+
+              <P>
+                We ensure perfect fitting for every body type.
+              </P>
+
+            </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!--    QUALITY  -->
+
+      <div class="col-lg-3 col-md-6">
+
+        <div class="why-item">
+
+          <i class="bi bi-award"></i>
+
+        <div>
+
+        <h3>
+          QUALITY 
+        </h3>
+
+        <p>
+          High quality stitching with attention to detail.
+        </p>
+
+      </div>
+      </div>
+      </div>
+
+
+      <!--  AFFORDABLE  -->
+        <div class="col-lg-3 col-md-6">
+
+          <div class="why-item">
+
+            <i class="bi bi-wallet2"></i>
+          <div>
+
+          <h3>
+            AFFORDABLE
+          </h3>
+
+          <P>
+            Best quality services at reasonable prices.
+          </P>
+
+        </div>
+          </div>
+        </div>
+
+
+        <!--     EXPERIENCED    -->
+             <div class="col-lg-3 col-md-6">
+
+              <div class="why-item">
+
+                <i class="bi bi-person-circle"></i>
+
+                <div>
+
+                  <h3>
+                    EXPERIENCED 
+                  </h3>
+
+                  <p>
+                    Years of experience in tailoring and teaching.
+                  </p>
+
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--==========================================================================
+         GALLERY
+         
+         PUT YOUR 6 GALLERY IMAGES IN 
+         images/gallery.1jpd
+         images/gallery.jpf
+         etc.
+         ========================================================================-->
+         <section
+         id="gallery"
+         class="gallery-section"
+         >
+
+         <div class="container">
+          <h2 class="section-title center-title">
+            OUR GALLERY
+          </h2>
+
+          <div class="row g-2">
+
+            <div class="col-lg-2 col-md-4 col-6">
+              
+              <img
+              src="images/gallery1.jpg"
+              class="gallery-image"
+              alt="Tailoring work">
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+              <img src="images/gallery2.jpg"
+              class="gallery-image"
+              alt="Dress design"
+              >
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+              <img
+              src="images/gallery3.jpd"
+              class="gallery-image"
+              alt="sewing">
+
+            </div>
+
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+              <img 
+              src="images/gallery4.jpg"
+              class="gallery-image"
+              alt="Embroidery"
+              >
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+              <img
+              src="images/gallery5.jpd"
+              class="gallery-image"
+              alt="Tailoring tool"
+              >
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+              <img
+              src="images/gallery6.jpg"
+              class="gallery-image"
+              alt="Traditional dress">
+
+            </div>
+
+          </div>
+         </div>
+         </section>
+
+
+         <!--=======================================================
+         CLIENT RECIEWS 
+         ========================================================-->
+
+         <section class="reviews-section">
+
+          <div class="container">
+          <h2 class="section-title center-title">
+          WHAT OUR CLIENT SAY
+          </h2>
+
+          <div class="row g4">
+
+            <div class="col-md-6">
+
+              <div class="review-card">
+
+                <div class="quote">
+                  "
+                </div>
+
+                <p>
+                  Excellent stitching and perfect fitting.
+                  MARY is very professional and her work is outstanding!
+                </p>
+
+                <strong>
+                  -AYESHA KHAN 
+                </strong>
+
+                <div class="client-image">
+                  A
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="review-card">
+
+                <div class="quote">
+                  "
+                </div>
+
+                <p>
+                  I joined the tailoring classes and learned so much. Highly recommend!
+                </p>
+
+                <strong>
+                  -Sana Ahmed
+                </strong>
+
+                <div class="client-image">
+                  S
+                </div>
+
+              </div>
+            </div>
+          </div>
+         </section>
+
+         <!--=======================================================
+         CONTACT
+         ========================================================-->
+        <section 
+        id="contact"
+        class="contact-section">
+
+        <div class="container">
+
+          <h2 class="section-title center-tile">
+            GET IN TOUCH 
+          </h2>
+
+          <div class="row">
+
+            <!----------------------CONTACT INFORMATION--------------------------->
+
+            <div class="col-lg-6">
+
+              <div class="contact-info">
+
+                <p>
+                  <i class="bi bi-telephone"></i>
+                  +91 98765 43210
+                </p>
+
+                <p>
+                  <i class="bi bi-geo-alt"></i>
+                  Lajpat Nagar, Delhi, India
+                </p>
+
+                <p>
+                  <i class="bi bi-envelope"></i>
+                  marytailoringstudio@gmail.com
+                </p>
+
+                <p>
+                  <i class="bi bi-whatsapp"></i>
+                  +91 9999829846
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <!--  CONTACT FORM   -->
+              <div class="col-lg-6">
+                <form id="contact form">
+
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+
+                      <input 
+                      type="text"
+                      id="name"
+                      placeholder="Your Name"
+                      required>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                      <input
+                      type="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                      >
+
+                    </div>
+                  </div>
+
+                  <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required>
+                  </textarea>
+
+                  <button
+                  type="submit"
+                  class="send-button">
+                  SEND MESSAGE
+                  </button>
+
+                </form>
+              </div>
+          </div>
+        </div>
+        </section>
+
+
+        <!--======================================================
+        FOOTER
+        ========================================================-->
+        <footer>
+
+          <div class="container">
+            <div class="footer-content">
+
+              <div class="footer-logo">
+                <img src="tailoring image/Logo2.png">
+
+              </div>
+
+              <p>
+                @ 2026 Mary's Tailoring Studio.
+                All Right Reserved.
+              </p>
+
+              <div class="social-icons">
+
+                <a href="#">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </footer>
+
+
+        <!--============================================================
+        BOOTSTRAP JAVASCRIPT
+        ==============================================================-->
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/js/bootstrap.bundle.min.js">
+        </script>
+
+
+        <!--    YOUR JAVASCRIPT   -->
+
+        <script src="script.js"></script>
+
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+      
+            
+
+
+    
+
+
+
+   
