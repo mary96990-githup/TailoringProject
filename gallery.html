@@ -2,72 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Gallery | Mary's Tailoring Studio</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- your single stylesheet (contact CSS is pasted at the bottom of it) -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <!-- NAVBAR -->
-
+  <body class="gallery-page">
+    <!-- ================= NAVBAR (same as other pages) ================= -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
             src="tailoring image/Logo2.png"
+            alt="Mary's Tailoring Studio Logo"
             class="logo-image"
-            alt="Mary's Tailoring Studio"
           />
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link" href="index.html"> HOME </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
+              <a class="nav-link" href="about.html"> ABOUT </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="services.html">SERVICES</a>
+              <a class="nav-link" href="services.html"> SERVICES </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="classes.html">CLASSES</a>
+              <a class="nav-link" href="classes.html"> CLASSES </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link active" href="gallery.html">GALLERY</a>
+              <a class="nav-link active" href="gallery.html"> GALLERY </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
+              <a class="nav-link" href="contact.html"> CONTACT </a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html"> LOGIN </a>
+            </li>
             <li class="nav-item">
               <a class="book-button" href="order.html"> BOOK AN ORDER </a>
             </li>
@@ -76,105 +77,338 @@
       </div>
     </nav>
 
-    <!-- HERO -->
-
-    <section class="inner-page-hero">
+    <!-- ================= HERO ================= -->
+    <section class="gl-hero">
       <div class="container">
-        <p>Our Work</p>
-
-        <h1>OUR GALLERY</h1>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-
-    <section class="page-content">
-      <div class="container">
-        <h2 class="section-title center-title">TAILORING & DESIGN</h2>
-
-        <div class="row g-3">
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery1.jpg"
-              class="full-gallery-image"
-              alt="Tailoring work"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery2.jpg"
-              class="full-gallery-image"
-              alt="Dress design"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery3.jpg"
-              class="full-gallery-image"
-              alt="Sewing"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery4.jpg"
-              class="full-gallery-image"
-              alt="Embroidery"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery5.jpg"
-              class="full-gallery-image"
-              alt="Tailoring tools"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery6.jpg"
-              class="full-gallery-image"
-              alt="Traditional dress"
-            />
+        <div class="gl-hero-inner">
+          <svg
+            class="gl-sprig"
+            viewBox="0 0 80 150"
+            fill="none"
+            stroke="#c99b3c"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M40 146 C38 110 42 70 40 8" />
+            <path d="M40 120 C22 116 12 102 10 88 C26 90 38 102 40 120Z" />
+            <path d="M40 100 C58 96 68 82 70 68 C54 70 42 82 40 100Z" />
+            <path d="M40 78 C22 74 14 60 12 46 C28 48 38 60 40 78Z" />
+            <path d="M40 56 C56 52 64 40 66 28 C52 30 42 40 40 56Z" />
+            <path d="M40 34 C30 30 26 20 26 12 C34 14 40 22 40 34Z" />
+            <path d="M40 8 C46 14 46 22 40 28 C34 22 34 14 40 8Z" />
+          </svg>
+          <div class="gl-hero-text">
+            <p class="gl-script">Our</p>
+            <h1>GALLERY</h1>
+            <p class="gl-tag">
+              TIMELESS DESIGNS <span>&bull;</span> ELEGANT CRAFTSMANSHIP
+            </p>
+            <p class="gl-hero-p">
+              Explore our collection of custom creations, from bridal couture to
+              everyday elegance. Each piece is a reflection of our passion,
+              precision and dedication to timeless style.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ================= CATEGORIES ================= -->
+    <section class="gl-browse">
+      <div class="container">
+        <div class="gl-head">
+          <span></span>
+          <h2>BROWSE BY CATEGORY</h2>
+          <span></span>
+        </div>
 
+        <div
+          class="gl-cats"
+          id="glCats"
+          role="tablist"
+          aria-label="Gallery categories"
+        >
+          <button type="button" class="gl-cat active" data-filter="all">
+            <i class="bi bi-grid"></i><span>ALL</span>
+          </button>
+          <button type="button" class="gl-cat" data-filter="bridal">
+            <i class="bi bi-person-standing-dress"></i><span>BRIDAL</span>
+          </button>
+          <button type="button" class="gl-cat" data-filter="dresses">
+            <i class="bi bi-handbag"></i><span>DRESSES</span>
+          </button>
+          <button type="button" class="gl-cat" data-filter="suits">
+            <i class="bi bi-person-fill"></i><span>SUITS</span>
+          </button>
+          <button type="button" class="gl-cat" data-filter="traditional">
+            <i class="bi bi-stars"></i><span>TRADITIONAL</span>
+          </button>
+          <button type="button" class="gl-cat" data-filter="occasion">
+            <i class="bi bi-gem"></i><span>OCCASION WEAR</span>
+          </button>
+        </div>
+
+        <!-- ================= GRID ================= -->
+        <div class="gl-grid" id="glGrid">
+          <figure class="gl-item" data-category="bridal">
+            <button
+              type="button"
+              class="gl-thumb"
+              aria-label="View Bridal Lehenga"
+            >
+              <img
+                src="tailoring image/gallery/bridal-lehenga.jpg"
+                alt="Bridal Lehenga"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Bridal Lehenga<span class="gl-underline"></span>
+            </figcaption>
+          </figure>
+          <figure class="gl-item" data-category="dresses occasion">
+            <button
+              type="button"
+              class="gl-thumb"
+              aria-label="View Evening Gown"
+            >
+              <img
+                src="tailoring image/gallery/evening-gown.jpg"
+                alt="Evening Gown"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Evening Gown<span class="gl-underline"></span>
+            </figcaption>
+          </figure>
+          <figure class="gl-item" data-category="suits">
+            <button type="button" class="gl-thumb" aria-label="View Men's Suit">
+              <img
+                src="tailoring image/gallery/mens-suit.jpg"
+                alt="Men's Suit"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Women's Suit<span class="gl-underline"></span>
+            </figcaption>
+          </figure>
+          <figure class="gl-item" data-category="traditional">
+            <button
+              type="button"
+              class="gl-thumb"
+              aria-label="View Traditional Anarkali"
+            >
+              <img
+                src="tailoring image/gallery/traditional-anarkali.jpg"
+                alt="Traditional Anarkali"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Traditional Anarkali<span class="gl-underline"></span>
+            </figcaption>
+          </figure>
+          <figure class="gl-item" data-category="dresses occasion">
+            <button
+              type="button"
+              class="gl-thumb"
+              aria-label="View Cocktail Dress"
+            >
+              <img
+                src="tailoring image/gallery/cocktail-dress.jpg"
+                alt="Cocktail Dress"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Cocktail Dress<span class="gl-underline"></span>
+            </figcaption>
+          </figure>
+          <figure class="gl-item" data-category="bridal traditional">
+            <button
+              type="button"
+              class="gl-thumb"
+              aria-label="View Custom Detailing"
+            >
+              <img
+                src="tailoring image/gallery/custom-detailing.jpg"
+                alt="Custom Detailing"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Custom Detailing<span class="gl-underline"></span>
+            </figcaption>
+          </figure>
+          <figure class="gl-item" data-category="traditional">
+            <button
+              type="button"
+              class="gl-thumb"
+              aria-label="View Saree Draping &amp; Stitching"
+            >
+              <img
+                src="tailoring image/gallery/saree-draping.jpg"
+                alt="Saree Draping &amp; Stitching"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Afghan tradational Dress &amp; Gand Afghani<span
+                class="gl-underline"
+              ></span>
+            </figcaption>
+          </figure>
+          <figure class="gl-item" data-category="occasion">
+            <button
+              type="button"
+              class="gl-thumb"
+              aria-label="View Occasion Wear"
+            >
+              <img
+                src="tailoring image/gallery/occasion-wear.jpg"
+                alt="Occasion Wear"
+                loading="lazy"
+              />
+              <span class="gl-zoom"
+                ><i class="bi bi-arrows-fullscreen"></i
+              ></span>
+            </button>
+            <figcaption>
+              Occasion Wear<span class="gl-underline"></span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="gl-empty" id="glEmpty" hidden>
+          No designs in this category yet.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED ================= -->
+    <section class="gl-featured-wrap">
+      <div class="container">
+        <div class="gl-featured">
+          <div class="gl-featured-img">
+            <img
+              src="tailoring image/gallery/featured-gown.jpg"
+              alt="Featured green embroidered gown"
+              loading="lazy"
+            />
+          </div>
+          <div class="gl-featured-text">
+            <p class="gl-script">Featured Collection</p>
+            <h2>CUSTOM COUTURE <small>FOR</small><br />EVERY SPECIAL MOMENT</h2>
+            <p>
+              From bridal dreams to modern elegance, our featured collection
+              showcases the finest craftsmanship and attention to detail.
+            </p>
+            <a href="order.html" class="gl-explore"
+              >EXPLORE COLLECTION <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+          <div class="gl-featured-quote">
+            <svg
+              class="gl-sprig-sm"
+              viewBox="0 0 80 150"
+              fill="none"
+              stroke="#c99b3c"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <path d="M40 146 C38 110 42 70 40 8" />
+              <path d="M40 100 C58 96 68 82 70 68 C54 70 42 82 40 100Z" />
+              <path d="M40 70 C22 66 14 52 12 38 C28 40 38 52 40 70Z" />
+              <path d="M40 8 C46 14 46 22 40 28 C34 22 34 14 40 8Z" />
+            </svg>
+            <p class="gl-script">
+              Your Style<br />Our Craft<br />Perfection<br />in Every Stitch
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div
+      class="gl-lightbox"
+      id="glLightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+      hidden
+    >
+      <button type="button" class="gl-lb-close" id="glClose" aria-label="Close">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <button
+        type="button"
+        class="gl-lb-nav gl-lb-prev"
+        id="glPrev"
+        aria-label="Previous"
+      >
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <figure class="gl-lb-fig">
+        <img id="glLbImg" src="" alt="" />
+        <figcaption id="glLbCap"></figcaption>
+      </figure>
+      <button
+        type="button"
+        class="gl-lb-nav gl-lb-next"
+        id="glNext"
+        aria-label="Next"
+      >
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- ================= FOOTER (same as other pages) ================= -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <img
-              src="tailoring image/Logo2.png"
-              alt="Mary's Tailoring Studio"
-            />
+            <a href="index.html"
+              ><img
+                src="tailoring image/Logo2.png"
+                alt="Mary's Tailoring Studio"
+            /></a>
           </div>
-
           <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
-
           <div class="social-icons">
-            <a href="#">
-              <i class="bi bi-facebook"></i>
-            </a>
-
-            <a href="#">
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a href="#">
-              <i class="bi bi-whatsapp"></i>
-            </a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="gallery.js"></script>
   </body>
 </html>

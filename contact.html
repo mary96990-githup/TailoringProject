@@ -2,72 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Gallery | Mary's Tailoring Studio</title>
+    <title>Contact Us | Mary's Tailoring Studio</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- your single stylesheet (contact CSS is pasted at the bottom of it) -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <!-- NAVBAR -->
-
+  <body class="contact-page">
+    <!-- ================= NAVBAR (same as other pages) ================= -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
             src="tailoring image/Logo2.png"
+            alt="Mary's Tailoring Studio Logo"
             class="logo-image"
-            alt="Mary's Tailoring Studio"
           />
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link" href="index.html"> HOME </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
+              <a class="nav-link" href="about.html"> ABOUT </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="services.html">SERVICES</a>
+              <a class="nav-link" href="services.html"> SERVICES </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="classes.html">CLASSES</a>
+              <a class="nav-link" href="classes.html"> CLASSES </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link active" href="gallery.html">GALLERY</a>
+              <a class="nav-link" href="gallery.html"> GALLERY </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
+              <a class="nav-link active" href="contact.html"> CONTACT </a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html"> LOGIN </a>
+            </li>
             <li class="nav-item">
               <a class="book-button" href="order.html"> BOOK AN ORDER </a>
             </li>
@@ -76,105 +77,361 @@
       </div>
     </nav>
 
-    <!-- HERO -->
-
-    <section class="inner-page-hero">
+    <!-- ================= HERO ================= -->
+    <section class="ct-hero">
       <div class="container">
-        <p>Our Work</p>
+        <div class="ct-hero-inner">
+          <svg
+            class="ct-sprig"
+            viewBox="0 0 80 150"
+            fill="none"
+            stroke="#c99b3c"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M40 146 C38 110 42 70 40 8" />
+            <path d="M40 120 C22 116 12 102 10 88 C26 90 38 102 40 120Z" />
+            <path d="M40 100 C58 96 68 82 70 68 C54 70 42 82 40 100Z" />
+            <path d="M40 78 C22 74 14 60 12 46 C28 48 38 60 40 78Z" />
+            <path d="M40 56 C56 52 64 40 66 28 C52 30 42 40 40 56Z" />
+            <path d="M40 34 C30 30 26 20 26 12 C34 14 40 22 40 34Z" />
+            <path d="M40 8 C46 14 46 22 40 28 C34 22 34 14 40 8Z" />
+          </svg>
 
-        <h1>OUR GALLERY</h1>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-
-    <section class="page-content">
-      <div class="container">
-        <h2 class="section-title center-title">TAILORING & DESIGN</h2>
-
-        <div class="row g-3">
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery1.jpg"
-              class="full-gallery-image"
-              alt="Tailoring work"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery2.jpg"
-              class="full-gallery-image"
-              alt="Dress design"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery3.jpg"
-              class="full-gallery-image"
-              alt="Sewing"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery4.jpg"
-              class="full-gallery-image"
-              alt="Embroidery"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery5.jpg"
-              class="full-gallery-image"
-              alt="Tailoring tools"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery6.jpg"
-              class="full-gallery-image"
-              alt="Traditional dress"
-            />
+          <div class="ct-hero-text">
+            <p class="ct-script">Get in Touch</p>
+            <h1>CONTACT US</h1>
+            <h2>We'd Love to Hear From You</h2>
+            <div class="ct-divider">
+              <span></span><i class="bi bi-suit-diamond-fill"></i><span></span>
+            </div>
+            <p class="ct-hero-p">
+              Have a question, request, or need a custom quote?<br />
+              Our team at Mary's Tailoring Studio is here to help.<br />
+              Reach out to us — we'll get back to you as soon as possible!
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ================= INFO STRIP ================= -->
+    <section class="ct-info">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-6 col-lg-3 ct-info-item">
+            <div class="ct-info-icon"><i class="bi bi-telephone-fill"></i></div>
+            <h3>CALL US</h3>
+            <a href="tel:+919999829846" class="ct-info-main">+91 99998 29846</a>
+            <small>Mon - Sat, 9:00 AM - 7:00 PM</small>
+          </div>
+          <div class="col-6 col-lg-3 ct-info-item">
+            <div class="ct-info-icon"><i class="bi bi-envelope-fill"></i></div>
+            <h3>EMAIL US</h3>
+            <a href="mailto:marystailoringstudio@gmail.com" class="ct-info-main"
+              >marystailoringstudio@gmail.com</a
+            >
+            <small>We reply within 24 hours</small>
+          </div>
+          <div class="col-6 col-lg-3 ct-info-item">
+            <div class="ct-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h3>VISIT US</h3>
+            <span class="ct-info-main">Lajpat Nagar, Delhi, India</span>
+            <small>By appointment or walk-in</small>
+          </div>
+          <div class="col-6 col-lg-3 ct-info-item">
+            <div class="ct-info-icon"><i class="bi bi-scissors"></i></div>
+            <h3>CUSTOM STITCHING</h3>
+            <span class="ct-info-sub">For Every Occasion</span>
+            <span class="ct-script ct-info-script">Your Style, Our Craft</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- ================= FORM + HOURS ================= -->
+    <section class="ct-main">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <!-- photo -->
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="ct-photo"></div>
+          </div>
+
+          <!-- form -->
+          <div class="col-lg-5">
+            <p class="ct-script ct-form-script">Send Us a Message</p>
+            <h2 class="ct-title">CONTACT FORM</h2>
+            <p class="ct-form-intro">
+              Fill in the details below and we'll get back to you<br
+                class="d-none d-md-block"
+              />
+              as soon as possible. We look forward to connecting!
+            </p>
+
+            <form id="ctForm" novalidate>
+              <div class="ct-field">
+                <i class="bi bi-person-fill"></i>
+                <input
+                  type="text"
+                  id="ctName"
+                  name="name"
+                  placeholder="Name *"
+                  autocomplete="name"
+                  required
+                />
+                <small class="ct-error" data-for="ctName"></small>
+              </div>
+              <div class="ct-field">
+                <i class="bi bi-envelope-fill"></i>
+                <input
+                  type="email"
+                  id="ctEmail"
+                  name="email"
+                  placeholder="Email *"
+                  autocomplete="email"
+                  required
+                />
+                <small class="ct-error" data-for="ctEmail"></small>
+              </div>
+              <div class="ct-field">
+                <i class="bi bi-telephone-fill"></i>
+                <input
+                  type="tel"
+                  id="ctPhone"
+                  name="phone"
+                  placeholder="Phone *"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  required
+                />
+                <small class="ct-error" data-for="ctPhone"></small>
+              </div>
+              <div class="ct-field">
+                <i class="bi bi-list-ul"></i>
+                <select id="ctSubject" name="subject" required>
+                  <option value="">Subject *</option>
+                  <option>Custom Stitching</option>
+                  <option>Alterations</option>
+                  <option>Tailoring Classes</option>
+                  <option>Get a Quote</option>
+                  <option>Other</option>
+                </select>
+                <small class="ct-error" data-for="ctSubject"></small>
+              </div>
+              <div class="ct-field ct-field-area">
+                <i class="bi bi-chat-fill"></i>
+                <textarea
+                  id="ctMessage"
+                  name="message"
+                  rows="4"
+                  placeholder="Message *"
+                  required
+                ></textarea>
+                <small class="ct-error" data-for="ctMessage"></small>
+              </div>
+
+              <button type="submit" class="ct-send" id="ctSend">
+                <i class="bi bi-send-fill"></i> SEND MESSAGE
+              </button>
+              <p
+                class="ct-status"
+                id="ctStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+
+          <!-- hours / location -->
+          <div class="col-lg-4">
+            <aside class="ct-card">
+              <h3 class="ct-card-title">
+                <i class="bi bi-clock"></i> BUSINESS HOURS
+              </h3>
+              <ul class="ct-hours">
+                <li>
+                  <span>Monday – Saturday</span><span>9:00 AM – 7:00 PM</span>
+                </li>
+                <li><span>Sunday</span><span>Closed</span></li>
+                <li><span>Public Holidays</span><span>Closed</span></li>
+              </ul>
+              <div class="ct-divider">
+                <span></span><i class="bi bi-suit-diamond-fill"></i
+                ><span></span>
+              </div>
+
+              <h3 class="ct-card-title">
+                <i class="bi bi-geo-alt-fill"></i> OUR LOCATION
+              </h3>
+              <p class="ct-card-text">
+                <strong>Lajpat Nagar,<br />Delhi, India</strong>
+              </p>
+              <p class="ct-card-text">
+                Visit our studio or get in touch for appointments, consultations
+                or custom orders.
+              </p>
+              <p class="ct-card-heart"><i class="bi bi-heart-fill"></i></p>
+              <p class="ct-script ct-see-you">See you soon!</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FIND US ================= -->
+    <section class="ct-find">
+      <div class="container">
+        <div class="ct-find-box">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-5">
+              <h2 class="ct-title ct-find-title">
+                <i class="bi bi-geo-alt-fill"></i> FIND US
+              </h2>
+              <h3 class="ct-find-sub">Our Studio Location</h3>
+              <p>
+                Mary's Tailoring Studio is located in Lajpat Nagar, Delhi. We
+                are easily accessible by metro, bus and car. Feel free to visit
+                us at your convenience!
+              </p>
+              <a
+                class="ct-maps-btn"
+                target="_blank"
+                rel="noopener"
+                href="https://www.google.com/maps/search/?api=1&query=Lajpat+Nagar+Delhi"
+              >
+                <i class="bi bi-geo-alt-fill"></i> OPEN IN GOOGLE MAPS
+              </a>
+            </div>
+            <div class="col-lg-7">
+              <div class="ct-map">
+                <iframe
+                  title="Mary's Tailoring Studio location"
+                  src="https://www.google.com/maps?q=Lajpat+Nagar,+Delhi&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="ct-faq">
+      <div class="container">
+        <div class="ct-faq-head">
+          <span></span>
+          <h2>QUICK CONTACT / FAQ</h2>
+          <span></span>
+        </div>
+        <p class="ct-faq-sub">Common Questions</p>
+
+        <div class="row g-3" id="ctFaq">
+          <div class="col-lg-6">
+            <div class="ct-faq-item">
+              <button type="button" class="ct-faq-q" aria-expanded="false">
+                What are your tailoring service charges?
+                <i class="bi bi-plus"></i>
+              </button>
+              <div class="ct-faq-a">
+                <p>
+                  Charges depend on the garment, fabric and detailing. Message
+                  us with your design and we'll share a clear quote.
+                </p>
+              </div>
+            </div>
+            <div class="ct-faq-item">
+              <button type="button" class="ct-faq-q" aria-expanded="false">
+                How long does a custom order take? <i class="bi bi-plus"></i>
+              </button>
+              <div class="ct-faq-a">
+                <p>
+                  Most custom orders are ready in 5–10 working days. Bridal and
+                  heavy work may take longer — we'll confirm when you book.
+                </p>
+              </div>
+            </div>
+            <div class="ct-faq-item">
+              <button type="button" class="ct-faq-q" aria-expanded="false">
+                Do you provide doorstep pickup and delivery?
+                <i class="bi bi-plus"></i>
+              </button>
+              <div class="ct-faq-a">
+                <p>
+                  Yes, pickup and delivery can be arranged in nearby areas.
+                  Contact us to check availability for your location.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ct-faq-item">
+              <button type="button" class="ct-faq-q" aria-expanded="false">
+                Can I book a class at your studio? <i class="bi bi-plus"></i>
+              </button>
+              <div class="ct-faq-a">
+                <p>
+                  Absolutely! Visit our
+                  <a href="classes.html">Classes page</a> to choose a level and
+                  book your seat.
+                </p>
+              </div>
+            </div>
+            <div class="ct-faq-item">
+              <button type="button" class="ct-faq-q" aria-expanded="false">
+                What types of fabrics do you work with?
+                <i class="bi bi-plus"></i>
+              </button>
+              <div class="ct-faq-a">
+                <p>
+                  Cotton, silk, georgette, linen, chiffon, wool blends and more.
+                  You can bring your own fabric or we can help you choose.
+                </p>
+              </div>
+            </div>
+            <div class="ct-faq-item">
+              <button type="button" class="ct-faq-q" aria-expanded="false">
+                How can I get a quote for my design? <i class="bi bi-plus"></i>
+              </button>
+              <div class="ct-faq-a">
+                <p>
+                  Pick “Get a Quote” as the subject in the form above and
+                  describe or attach a reference on WhatsApp — we'll reply
+                  within 24 hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER (same as other pages) ================= -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <img
-              src="tailoring image/Logo2.png"
-              alt="Mary's Tailoring Studio"
-            />
+            <a href="index.html"
+              ><img
+                src="tailoring image/Logo2.png"
+                alt="Mary's Tailoring Studio"
+            /></a>
           </div>
-
           <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
-
           <div class="social-icons">
-            <a href="#">
-              <i class="bi bi-facebook"></i>
-            </a>
-
-            <a href="#">
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a href="#">
-              <i class="bi bi-whatsapp"></i>
-            </a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>

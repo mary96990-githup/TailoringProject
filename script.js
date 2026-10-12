@@ -1,1234 +1,180 @@
 /* ============================================================
-                     GENERAL SETTINGS
+   MARY'S TAILORING STUDIO - script.js
+   Works with index.html (Bootstrap 5 + your style.css)
 ============================================================ */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #faf7f2;
-    color: #222;
-    font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-
-/* ============================================================
-                     NAVIGATION BAR
-============================================================ */
-
-.navbar {
-    background-color: #111;
-    padding: 10px 0;
-}
-
-.logo-image {
-    width: 155px;
-    height: auto;
-    display: block;
-}
-
-.navbar-nav {
-    align-items: center;
-    gap: 12px;
-}
-
-.nav-link {
-    color: white !important;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: #d4a640 !important;
-}
-
-.book-button {
-    background-color: #d4a640;
-    color: white;
-    padding: 10px 17px;
-    border-radius: 3px;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    display: inline-block;
-}
-
-.book-button:hover,
-.book-button.active {
-    background-color: #b88a2f;
-    color: white;
-}
-
-
-/* ============================================================
-                     HOME HERO
-============================================================ */
-
-.hero-section {
-    min-height: 430px;
-    padding-top: 100px;
-
-    display: flex;
-    align-items: center;
-
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(250, 247, 242, 0.98),
-            rgba(250, 240, 242, 0.8),
-            rgba(250, 247, 242, 0.15)
-        ),
-        url("tailoring image/Image1.jpeg");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-content {
-    max-width: 650px;
-}
-
-.welcome {
-    color: #c99b3c;
-    font-size: 32px;
-    font-style: italic;
-}
-
-.hero-section h1 {
-    font-size: 58px;
-    line-height: 0.95;
-    letter-spacing: 2px;
-}
-
-.hero-section h3 {
-    margin-top: 20px;
-    font-size: 17px;
-}
-
-.hero-section h3 span {
-    color: #c99b3c;
-    padding: 0 5px;
-}
-
-.hero-text {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.7;
-    margin-top: 15px;
-}
-
-
-/* ============================================================
-                     BUTTONS
-============================================================ */
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.black-button {
-    display: inline-block;
-    background-color: #171717;
-    color: white;
-    text-decoration: none;
-    padding: 10px 24px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    border-radius: 3px;
-}
-
-.black-button:hover {
-    background-color: #333;
-    color: white;
-}
-
-.gold-button {
-    display: inline-block;
-    background-color: #d4a640;
-    color: white;
-    text-decoration: none;
-    padding: 10px 24px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    border-radius: 3px;
-}
-
-.gold-button:hover {
-    background-color: #b88a2f;
-    color: white;
-}
-
-.home-more-button {
-    text-align: center;
-    margin-top: 30px;
-}
-
-
-/* ============================================================
-                     GENERAL SECTIONS
-============================================================ */
-
-section {
-    padding: 30px 0;
-}
-
-.section-title {
-    font-size: 21px;
-    margin-bottom: 20px;
-}
-
-.center-title {
-    text-align: center;
-}
-
-.section-title::after {
-    content: "";
-    display: block;
-    width: 35px;
-    height: 2px;
-    background-color: #d4a640;
-    margin-top: 7px;
-}
-
-.center-title::after {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* ============================================================
-                     ABOUT ME
-============================================================ */
-
-.about-section {
-    background-color: #faf7f2;
-}
-
-.about-section p {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-
-/* ============================================================
-                     ABOUT VIDEO
-============================================================ */
-
-.about-video-box {
-    width: 100%;
-    height: 205px;
-    overflow: hidden;
-    border-radius: 7px;
-}
-
-.about-video {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-
-/* ============================================================
-                     STUDIO CARD
-============================================================ */
-
-.studio-card {
-    border: 1px solid #d9c69e;
-    text-align: center;
-    padding: 18px;
-    min-height: 190px;
-}
-
-.studio-symbol {
-    color: #d4a640;
-    font-size: 40px;
-    text-align: center;
-}
-
-.studio-symbol img {
-    width: 110px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px auto;
-    object-fit: contain;
-}
-
-.studio-card h2 {
-    font-size: 23px;
-    margin: 5px 0;
-}
-
-.studio-card h4 {
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-
-.studio-card p {
-    margin-top: 15px;
-}
-
-.heart-icon {
-    color: #d4a640;
-    font-size: 22px;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-
-/* ============================================================
-                     SERVICES
-============================================================ */
-
-.services-section {
-    background-color: #faf7f2;
-}
-
-.service-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 7px;
-    text-align: center;
-    padding: 18px 12px;
-    min-height: 145px;
-    transition: 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.service-card i {
-    color: #d4a640;
-    font-size: 32px;
-}
-
-.service-card h3 {
-    font-size: 13px;
-    margin-top: 8px;
-}
-
-.service-card p {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    line-height: 1.5;
-}
-
-
-/* ============================================================
-                     WHY CHOOSE US
-============================================================ */
-
-.why-section {
-    background-color: #102b29;
-    color: white;
-}
-
-.white-title {
-    color: white;
-}
-
-.why-item {
-    display: flex;
-    gap: 15px;
-    padding: 10px;
-}
-
-.why-item i {
-    color: #d4a640;
-    font-size: 35px;
-}
-
-.why-item h3 {
-    color: #d4a640;
-    font-size: 14px;
-}
-
-.why-item p {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-}
-
-
-/* ============================================================
-                     GALLERY
-============================================================ */
-
-.gallery-section {
-    background-color: #faf7f2;
-}
-
-.gallery-image {
-    width: 100%;
-    height: 115px;
-    object-fit: cover;
-    border-radius: 7px;
-    display: block;
-    transition: 0.3s;
-}
-
-.gallery-image:hover {
-    transform: scale(1.03);
-}
-
-
-/* ============================================================
-                     REVIEWS
-============================================================ */
-
-.reviews-section {
-    background-color: #faf7f2;
-}
-
-.review-card {
-    position: relative;
-    background-color: white;
-    border: 1px solid #e0ddd6;
-    border-radius: 8px;
-    padding: 25px 60px;
-    min-height: 125px;
-}
-
-.quote {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    color: #d4a640;
-    font-size: 45px;
-}
-
-.review-card p {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-.review-card strong {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-}
-
-.client-image {
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #eee;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 20px;
-}
-
-
-/* ============================================================
-                     CONTACT
-============================================================ */
-
-.contact-section {
-    background-color: #faf7f2;
-}
-
-.contact-info p {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    margin-bottom: 18px;
-}
-
-.contact-info i {
-    font-size: 22px;
-    margin-right: 15px;
-    color: #b8862b;
-}
-
-form input,
-form textarea,
-form select {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 12px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    background-color: white;
-}
-
-form textarea {
-    resize: vertical;
-}
-
-form input:focus,
-form textarea:focus,
-form select:focus {
-    outline: none;
-    border-color: #d4a640;
-}
-
-.send-button {
-    float: right;
-    border: none;
-    background-color: #171717;
-    color: white;
-    padding: 10px 35px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.send-button:hover {
-    background-color: #333;
-}
-
-
-/* ============================================================
-                     FOOTER
-============================================================ */
-
-footer {
-    background-color: #111;
-    color: white;
-    padding: 17px 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/* SMALL FOOTER LOGO */
-
-.footer-logo img {
-    width: 120px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.footer-content p {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    margin: 0;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    color: #d4a640;
-    font-size: 20px;
-}
-
-.social-icons a:hover {
-    color: white;
-}
-
-
-/* ============================================================
-                     INNER PAGE HERO
-============================================================ */
-
-.inner-page-hero {
-    min-height: 330px;
-    padding-top: 100px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(250, 247, 242, 0.92),
-            rgba(250, 247, 242, 0.92)
-        ),
-        url("tailoring image/Image1.jpeg");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.inner-page-hero .container {
-    width: 100%;
-}
-
-.inner-page-hero p {
-    color: #c99b3c;
-    font-size: 24px;
-    font-style: italic;
-    margin-bottom: 8px;
-}
-
-.inner-page-hero h1 {
-    font-size: 48px;
-    letter-spacing: 1px;
-}
-
-.inner-page-hero span {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-}
-
-
-/* ============================================================
-                     INNER PAGE CONTENT
-============================================================ */
-
-.page-content {
-    padding: 70px 0;
-    min-height: 500px;
-}
-
-
-/* ============================================================
-                     ABOUT PAGE
-============================================================ */
-
-.about-page {
-    padding: 80px 0;
-}
-
-.second-page-image {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.about-page h2 {
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-
-.about-page p {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.about-page h3 {
-    font-size: 22px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    color: #b8862b;
-}
-
-
-/* ============================================================
-                     LARGE SERVICE CARDS
-============================================================ */
-
-.large-service-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    padding: 35px 20px;
-    min-height: 260px;
-    transition: 0.3s;
-}
-
-.large-service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.large-service-card i {
-    color: #d4a640;
-    font-size: 45px;
-}
-
-.large-service-card h3 {
-    font-size: 17px;
-    margin: 20px 0 12px;
-}
-
-.large-service-card p {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-
-/* ============================================================
-                     CLASS CARDS
-============================================================ */
-
-.class-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 35px;
-    min-height: 350px;
-    transition: 0.3s;
-}
-
-.class-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.class-card i {
-    color: #d4a640;
-    font-size: 45px;
-}
-
-.class-card h3 {
-    font-size: 20px;
-    margin: 20px 0 15px;
-}
-
-.class-card p,
-.class-card li {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-.class-card ul {
-    padding-left: 20px;
-    margin-top: 15px;
-}
-
-
-/* ============================================================
-                     FULL GALLERY
-============================================================ */
-
-.full-gallery-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-    transition: 0.3s;
-}
-
-.full-gallery-image:hover {
-    transform: scale(1.02);
-}
-
-
-/* ============================================================
-                     LARGE CONTACT
-============================================================ */
-
-.large-contact {
-    margin-top: 30px;
-}
-
-.large-contact p {
-    font-size: 15px;
-    margin-bottom: 25px;
-}
-
-
-/* ============================================================
-                     ORDER PAGE
-============================================================ */
-
-.order-container {
-    max-width: 800px;
-}
-
-.order-intro {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin-bottom: 30px;
-}
-
-#orderForm {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-
-/* ============================================================
-                     TABLETS
-============================================================ */
-
-@media (max-width: 991px) {
-
-    .navbar {
-        padding: 10px 15px;
-    }
-
-    .navbar-nav {
-        gap: 5px;
-        margin-top: 15px;
-    }
-
-    .nav-link {
-        font-size: 13px;
-    }
-
-    .book-button {
-        display: inline-block;
-        margin-top: 10px;
-    }
-
-
-    .hero-section {
-        min-height: 500px;
-        padding-top: 120px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .hero-content {
-        max-width: 600px;
-    }
-
-    .hero-section h1 {
-        font-size: 48px;
-    }
-
-    .welcome {
-        font-size: 28px;
-    }
-
-
-    .about-section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .about-video-box {
-        height: 250px;
-        margin-bottom: 25px;
-    }
-
-
-    .studio-card {
-        margin-top: 25px;
-    }
-
-    .studio-symbol img {
-        width: 100px;
-    }
-
-
-    .service-card {
-        margin-bottom: 15px;
-    }
-
-
-    .gallery-image {
-        height: 150px;
-    }
-
-
-    .footer-content {
-        padding: 0 20px;
-    }
-
-}
-
-
-/* ============================================================
-                     MOBILE
-============================================================ */
-
-@media (max-width: 767px) {
-
-    section {
-        padding: 40px 0;
-    }
-
-
-    .navbar {
-        padding: 8px 15px;
-    }
-
-
-    .logo-image {
-        width: 125px;
-    }
-
-
-    .navbar-nav {
-        align-items: flex-start;
-        gap: 5px;
-    }
-
-
-    .nav-link {
-        font-size: 13px;
-        padding: 8px 0;
-    }
-
-
-    .book-button {
-        margin-top: 8px;
-        font-size: 12px;
-        padding: 9px 15px;
-    }
-
-
-    .hero-section {
-        min-height: 600px;
-        padding: 120px 20px 50px;
-        background-position: center;
-    }
-
-
-    .hero-content {
-        max-width: 100%;
-    }
-
-
-    .welcome {
-        font-size: 25px;
-    }
-
-
-    .hero-section h1 {
-        font-size: 38px;
-        line-height: 1;
-        letter-spacing: 1px;
-    }
-
-
-    .hero-section h3 {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-
-    .hero-text {
-        font-size: 13px;
-    }
-
-
-    .hero-buttons {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-
-    .black-button,
-    .gold-button {
-        text-align: center;
-        width: 100%;
-    }
-
-
-    .section-title {
-        font-size: 21px;
-    }
-
-
-    .about-section {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-
-    .about-video-box {
-        width: 100%;
-        height: 250px;
-        margin-bottom: 25px;
-    }
-
-
-    .about-video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    .studio-card {
-        width: 100%;
-        margin-top: 25px;
-        padding: 20px 15px;
-    }
-
-
-    .studio-symbol img {
-        width: 90px;
-        max-width: 100%;
-        height: auto;
-    }
-
-
-    .studio-card h2 {
-        font-size: 22px;
-    }
-
-
-    .studio-card h4 {
-        font-size: 12px;
-    }
-
-
-    .studio-card p {
-        font-size: 13px;
-    }
-
-
-    .heart-icon {
-        font-size: 20px;
-    }
-
-
-    .service-card {
-        margin-bottom: 15px;
-        min-height: auto;
-        padding: 20px 15px;
-    }
-
-
-    .service-card i {
-        font-size: 30px;
-    }
-
-
-    .why-item {
-        padding: 15px 5px;
-    }
-
-
-    .why-item i {
-        font-size: 30px;
-    }
-
-
-    .gallery-image {
-        width: 100%;
-        height: 130px;
-    }
-
-
-    .review-card {
-        padding: 25px 45px;
-        margin-bottom: 15px;
-    }
-
-
-    .contact-info {
-        margin-bottom: 30px;
-    }
-
-
-    .contact-info p {
-        font-size: 13px;
-    }
-
-
-    form input,
-    form textarea,
-    form select {
-        font-size: 13px;
-    }
-
-
-    .send-button {
-        width: 100%;
-        float: none;
-        margin-top: 10px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-content {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-        padding: 0 15px;
-    }
-
-
-    /* FOOTER LOGO ON PHONE */
-
-    .footer-logo img {
-        width: 100px;
-    }
-
-
-    .social-icons {
-        justify-content: center;
-    }
-
-
-    /* INNER PAGE */
-
-    .inner-page-hero {
-        min-height: 280px;
-        padding: 110px 20px 40px;
-    }
-
-
-    .inner-page-hero h1 {
-        font-size: 35px;
-    }
-
-
-    .inner-page-hero p {
-        font-size: 20px;
-    }
-
-
-    .about-page {
-        padding: 50px 15px;
-    }
-
-
-    .second-page-image {
-        height: 300px;
-    }
-
-
-    .page-content {
-        padding: 50px 15px;
-    }
-
-
-    .large-service-card {
-        min-height: auto;
-        padding: 30px 20px;
-    }
-
-
-    .class-card {
-        min-height: auto;
-        padding: 30px 20px;
-    }
-
-
-    .full-gallery-image {
-        height: 250px;
-    }
-
-}
-
-
-/* ============================================================
-                     VERY SMALL PHONES
-============================================================ */
-
-@media (max-width: 480px) {
-
-    .logo-image {
-        width: 110px;
-    }
-
-
-    .hero-section {
-        min-height: 570px;
-        padding-top: 110px;
-    }
-
-
-    .welcome {
-        font-size: 22px;
-    }
-
-
-    .hero-section h1 {
-        font-size: 32px;
-    }
-
-
-    .hero-section h3 {
-        font-size: 14px;
-    }
-
-
-    .hero-text {
-        font-size: 12px;
-    }
-
-
-    .about-video-box {
-        height: 220px;
-    }
-
-
-    .studio-symbol img {
-        width: 80px;
-    }
-
-
-    .studio-card h2 {
-        font-size: 20px;
-    }
-
-
-    .gallery-image {
-        height: 110px;
-    }
-
-
-    .review-card {
-        padding: 25px 35px;
-    }
-
-
-    .inner-page-hero h1 {
-        font-size: 30px;
-    }
-
-
-    .full-gallery-image {
-        height: 220px;
-    }
-
-
-    .footer-logo img {
-        width: 90px;
-    }
-
-}
-
-
-/* ============================================================
-                     LARGE LAPTOP / DESKTOP
-============================================================ */
-
-@media (min-width: 1200px) {
-
-    .hero-section {
-        min-height: 500px;
-    }
-
-
-    .hero-section h1 {
-        font-size: 62px;
-    }
-
-
-    .studio-symbol img {
-        width: 120px;
-    }
-
-
-    .about-video-box {
-        height: 260px;
-    }
-
-}
+document.addEventListener("DOMContentLoaded", function () {
+  /* ----------------------------------------------------------
+     SETTINGS - change these if needed
+  ---------------------------------------------------------- */
+  const WHATSAPP_NUMBER = "919999829846"; // country code + number, no + or spaces
+
+  /* ----------------------------------------------------------
+     1. NAVBAR: shadow when scrolling
+  ---------------------------------------------------------- */
+  const navbar = document.querySelector(".navbar");
+
+  function handleNavbarScroll() {
+    if (!navbar) return;
+    if (window.scrollY > 40) {
+      navbar.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.35)";
+    } else {
+      navbar.style.boxShadow = "none";
+    }
+  }
+
+  handleNavbarScroll();
+  window.addEventListener("scroll", handleNavbarScroll);
+
+  /* ----------------------------------------------------------
+     2. MOBILE MENU: close automatically after clicking a link
+  ---------------------------------------------------------- */
+  const navMenu = document.getElementById("navbarMenu");
+
+  if (navMenu && window.bootstrap) {
+    const menuLinks = navMenu.querySelectorAll("a");
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (navMenu.classList.contains("show")) {
+          bootstrap.Collapse.getOrCreateInstance(navMenu).hide();
+        }
+      });
+    });
+  }
+
+  /* ----------------------------------------------------------
+     3. SMOOTH SCROLL for in-page links (href="#something")
+        Accounts for the fixed navbar height
+  ---------------------------------------------------------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
+      if (targetId.length < 2) return; // ignore plain "#" (social icons)
+
+      const target = document.querySelector(targetId);
+      if (!target) return;
+
+      e.preventDefault();
+      const offset = navbar ? navbar.offsetHeight : 0;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  });
+
+  /* ----------------------------------------------------------
+     4. FADE-IN ANIMATION when sections scroll into view
+  ---------------------------------------------------------- */
+  const animatedItems = document.querySelectorAll(
+    ".service-card, .why-item, .gallery-image, .review-card, .studio-card",
+  );
+
+  if ("IntersectionObserver" in window) {
+    animatedItems.forEach(function (item) {
+      item.style.opacity = "0";
+      item.style.transform = "translateY(20px)";
+      item.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+    });
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 },
+    );
+
+    animatedItems.forEach(function (item) {
+      observer.observe(item);
+    });
+  }
+
+  /* ----------------------------------------------------------
+     5. CONTACT FORM
+        - validates fields
+        - shows a success / error message
+        - opens WhatsApp with the message pre-filled
+          (there is no server, so this is how Mary receives it)
+  ---------------------------------------------------------- */
+  const contactForm = document.getElementById("contactForm");
+
+  if (contactForm) {
+    // message box shown under the form
+    const formMessage = document.createElement("p");
+    formMessage.style.cssText =
+      "clear:both; margin-top:15px; font-family:Arial,sans-serif; font-size:13px; display:none;";
+    contactForm.appendChild(formMessage);
+
+    function showMessage(text, isError) {
+      formMessage.textContent = text;
+      formMessage.style.color = isError ? "#b3261e" : "#2e7d32";
+      formMessage.style.display = "block";
+    }
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      // Validation
+      if (name.length < 2) {
+        showMessage("Please enter your name.", true);
+        return;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        showMessage("Please enter a valid email address.", true);
+        return;
+      }
+
+      if (message.length < 5) {
+        showMessage("Please write a short message.", true);
+        return;
+      }
+
+      // Build the WhatsApp message
+      const text =
+        "Hello Mary's Tailoring Studio,\n\n" +
+        "Name: " +
+        name +
+        "\n" +
+        "Email: " +
+        email +
+        "\n\n" +
+        "Message: " +
+        message;
+
+      const url =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodeURIComponent(text);
+
+      showMessage(
+        "Thank you, " + name + "! Opening WhatsApp to send your message...",
+        false,
+      );
+      window.open(url, "_blank");
+      contactForm.reset();
+    });
+  }
+
+  /* ----------------------------------------------------------
+     6. FOOTER YEAR (optional)
+        Add <span id="year"></span> in the footer if you want the
+        year to update automatically.
+  ---------------------------------------------------------- */
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});

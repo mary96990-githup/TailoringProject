@@ -21,7 +21,9 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- =========================================================
+                         NAVBAR
+========================================================= -->
 
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
@@ -69,120 +71,438 @@
             </li>
 
             <li class="nav-item">
-              <a class="book-button" href="order.html"> BOOK AN ORDER </a>
+              <a class="nav-link" href="login.html">
+                <i class="bi bi-person-fill"></i>
+                LOG IN
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="book-button" href="order.html">
+                <i class="bi bi-calendar3"></i>
+                BOOK AN ORDER
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- PAGE HERO -->
+    <!-- =========================================================
+                      SERVICES HERO
+========================================================= -->
 
-    <section class="inner-page-hero">
+    <section class="services-new-hero">
+      <div class="services-hero-overlay"></div>
+
       <div class="container">
-        <p>What We Offer</p>
+        <div class="services-hero-content">
+          <div class="services-small-title">MARY'S TAILORING STUDIO</div>
 
-        <h1>OUR SERVICES</h1>
+          <h1>Our <span>Services</span></h1>
+
+          <p>
+            From everyday elegance to once-in-a-lifetime moments, we bring your
+            style to life with expert craftsmanship, personalized service and
+            timeless designs.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- =========================================================
+                       SERVICES TITLE
+========================================================= -->
 
-    <section class="page-content">
+    <section class="services-main-section">
       <div class="container">
-        <h2 class="section-title center-title">OUR SERVICES</h2>
+        <div class="services-heading">
+          <span></span>
 
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="large-service-card">
-              <i class="bi bi-person-workspace"></i>
+          <h2>OUR SERVICES</h2>
+
+          <span></span>
+
+          <p>
+            Quality Stitching
+            <b>•</b>
+            Perfect Fit
+            <b>•</b>
+            Your Style, Our Expertise
+          </p>
+        </div>
+
+        <!-- =====================================================
+                       SERVICE CARDS
+    ====================================================== -->
+
+        <div class="row g-3">
+          <!-- 1 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-showcase-card">
+              <div class="service-showcase-image">
+                <img src="serviceCustom.jpeg" alt="Custom Stitching" />
+              </div>
+
+              <div class="service-showcase-icon">
+                <i class="bi bi-person-standing-dress"></i>
+              </div>
 
               <h3>CUSTOM STITCHING</h3>
 
               <p>
-                Beautiful and perfectly stitched outfits designed according to
-                your measurements and requirements.
+                Beautiful, well-fitted garments, stitched with care and
+                precision. From everyday wear to special occasions, we create
+                pieces that fit your style and personality.
               </p>
+
+              <a href="order.html">
+                LEARN MORE
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="large-service-card">
-              <i class="bi bi-person-standing-dress"></i>
+          <!-- 2 -->
 
-              <h3>DRESS DESIGN</h3>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-showcase-card">
+              <div class="service-showcase-image">
+                <img src="serviceAlterations.jpeg" alt="Alterations" />
+              </div>
 
-              <p>
-                Unique designs crafted according to your personal style and
-                preference.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="large-service-card">
-              <i class="bi bi-scissors"></i>
+              <div class="service-showcase-icon">
+                <i class="bi bi-scissors"></i>
+              </div>
 
               <h3>ALTERATIONS</h3>
 
               <p>
-                Professional alterations and resizing for the perfect fit and
-                comfort.
+                Whether it's a small adjustment or a complete fit
+                transformation, our alteration services ensure your clothes look
+                and feel perfect.
               </p>
+
+              <a href="order.html">
+                LEARN MORE
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="large-service-card">
-              <i class="bi bi-mortarboard-fill"></i>
+          <!-- 3 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-showcase-card">
+              <div class="service-showcase-image">
+                <img
+                  src="tailoring image/serviceTailoring.jpeg"
+                  alt="Tailoring Classes"
+                />
+              </div>
+
+              <div class="service-showcase-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
 
               <h3>TAILORING CLASSES</h3>
 
               <p>
-                Learn practical tailoring skills from beginner to advanced
-                level.
+                Learn the art of tailoring with hands-on training and expert
+                guidance. Classes are designed for all skill levels — from
+                beginners to advanced learners.
               </p>
+
+              <a href="classes.html">
+                LEARN MORE
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
           </div>
-        </div>
 
-        <div class="text-center mt-5">
-          <a href="order.html" class="gold-button"> BOOK AN ORDER </a>
+          <!-- 4 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-showcase-card">
+              <div class="service-showcase-image">
+                <img
+                  src="tailoring image/serviceDress.jpeg"
+                  alt="Dress Design"
+                />
+              </div>
+
+              <div class="service-showcase-icon">
+                <i class="bi bi-person-standing-dress"></i>
+              </div>
+
+              <h3>DRESS DESIGN</h3>
+
+              <p>
+                Unique designs crafted as per your style and preference. From
+                concept to creation, we design outfits that are as unique as you
+                are.
+              </p>
+
+              <a href="order.html">
+                LEARN MORE
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-showcase-card">
+              <div class="service-showcase-image">
+                <img
+                  src="tailoring image/serviceBridal.jpeg"
+                  alt="Bridal Dresses"
+                />
+              </div>
+
+              <div class="service-showcase-icon">
+                <i class="bi bi-gem"></i>
+              </div>
+
+              <h3>BRIDAL DRESSES</h3>
+
+              <p>
+                Elegant and custom-made bridal wear for your special day. We
+                ensure your look and feel extraordinary on your most important
+                day.
+              </p>
+
+              <a href="order.html">
+                LEARN MORE
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- 6 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-showcase-card">
+              <div class="service-showcase-image">
+                <img
+                  src="tailoring image/serviceFancy.jpeg"
+                  alt="Fancy and Occasion Wear"
+                />
+              </div>
+
+              <div class="service-showcase-icon">
+                <i class="bi bi-stars"></i>
+              </div>
+
+              <h3>FANCY & OCCASION WEAR</h3>
+
+              <p>
+                Stylish outfits for parties, festivals, weddings and special
+                events. Turn any occasion into a memorable one with our
+                exquisite collection.
+              </p>
+
+              <a href="order.html">
+                LEARN MORE
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- =========================================================
+                     SIMPLE PROCESS
+========================================================= -->
 
-    <footer>
+    <section class="service-process-section">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img
-              src="tailoring image/Logo2.png"
-              alt="Mary's Tailoring Studio"
-            />
+        <div class="services-heading">
+          <span></span>
+
+          <h2>OUR SIMPLE PROCESS</h2>
+
+          <span></span>
+
+          <p>From Consultation to Perfection</p>
+        </div>
+
+        <div class="row g-4 process-row">
+          <div class="col-lg">
+            <div class="process-item">
+              <div class="process-number">1</div>
+
+              <div class="process-icon">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+
+              <h3>CONSULTATION</h3>
+
+              <p>Share your ideas, style and requirements with us.</p>
+            </div>
           </div>
 
-          <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
+          <div class="col-lg">
+            <div class="process-arrow">→</div>
+          </div>
 
-          <div class="social-icons">
-            <a href="#">
-              <i class="bi bi-facebook"></i>
-            </a>
+          <div class="col-lg">
+            <div class="process-item">
+              <div class="process-number">2</div>
 
-            <a href="#">
-              <i class="bi bi-instagram"></i>
-            </a>
+              <div class="process-icon">
+                <i class="bi bi-rulers"></i>
+              </div>
 
-            <a href="#">
-              <i class="bi bi-whatsapp"></i>
+              <h3>MEASUREMENT</h3>
+
+              <p>We take precise measurements for the perfect fit.</p>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="process-arrow">→</div>
+          </div>
+
+          <div class="col-lg">
+            <div class="process-item">
+              <div class="process-number">3</div>
+
+              <div class="process-icon">
+                <i class="bi bi-plugin"></i>
+              </div>
+
+              <h3>STITCHING & DESIGN</h3>
+
+              <p>
+                Our experts bring your vision to life with care and precision.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="process-arrow">→</div>
+          </div>
+
+          <div class="col-lg">
+            <div class="process-item">
+              <div class="process-number">4</div>
+
+              <div class="process-icon">
+                <i class="bi bi-person-standing-dress"></i>
+              </div>
+
+              <h3>FITTING</h3>
+
+              <p>We ensure a flawless fit with final adjustments.</p>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="process-arrow">→</div>
+          </div>
+
+          <div class="col-lg">
+            <div class="process-item">
+              <div class="process-number">5</div>
+
+              <div class="process-icon">
+                <i class="bi bi-handbag"></i>
+              </div>
+
+              <h3>DELIVERY</h3>
+
+              <p>
+                Your custom piece is ready, beautifully finished and on time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                         CTA
+========================================================= -->
+
+    <section class="service-final-cta">
+      <div class="container text-center">
+        <p>READY TO BRING YOUR VISION TO LIFE?</p>
+
+        <h2>Book Your <span>Order</span> Today</h2>
+
+        <p>
+          Custom stitching, alterations, classes and more — all under one roof.
+        </p>
+
+        <a href="order.html" class="gold-button">
+          BOOK AN ORDER
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                         FOOTER
+========================================================= -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="index.html">
+              <img
+                src="tailoring image/Logo2.png"
+                alt="Mary's Tailoring Studio"
+              />
             </a>
           </div>
+
+          <div class="footer-contact">
+            <p>
+              <i class="bi bi-telephone"></i>
+              +91 9999829846
+            </p>
+
+            <p>
+              <i class="bi bi-envelope"></i>
+              marytailoringstudio@gmail.com
+            </p>
+
+            <p>
+              <i class="bi bi-geo-alt"></i>
+              Lajpat Nagar, Delhi, India
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="classes.html">CLASSES</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="Login.html">LOG IN</a>
+          </div>
+
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Mary's Tailoring Studio. All Rights Reserved.
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="services.js"></script>
   </body>
 </html>

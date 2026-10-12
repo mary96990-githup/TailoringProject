@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Classes | Mary's Tailoring Studio</title>
@@ -17,11 +16,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
+    <!-- This file is self-contained: do NOT also load style.css on this page -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- =========================================================
+                         NAVBAR
+    ========================================================= -->
 
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
@@ -38,6 +40,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,146 +52,459 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="services.html">SERVICES</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link active" href="classes.html">CLASSES</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="gallery.html">GALLERY</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
-
             <li class="nav-item">
-              <a class="book-button" href="order.html"> BOOK AN ORDER </a>
+              <a class="nav-link" href="login.jpeg">
+                <i class="bi bi-person-fill"></i> LOG IN
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="book-button" href="order.html">BOOK AN ORDER</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- =========================================================
+                         CLASSES HERO
+    ========================================================= -->
 
-    <section class="inner-page-hero">
+    <section class="classes-hero">
+      <div class="classes-hero-overlay"></div>
+
       <div class="container">
-        <p>Learn & Create</p>
+        <div class="classes-hero-content">
+          <p class="classes-script-line">
+            Learn <span>•</span> Create <span>•</span> Build Your Future
+          </p>
 
-        <h1>TAILORING CLASSES</h1>
+          <h1>TAILORING<br />CLASSES</h1>
 
-        <span> Learn. Stitch. Create. </span>
+          <h4>
+            PRACTICAL SKILLS <span>•</span> EXPERT GUIDANCE <span>•</span>
+            LIFETIME VALUE
+          </h4>
+
+          <p class="classes-hero-text">
+            Join Mary's Tailoring Studio and learn the art of tailoring from
+            experienced professionals. Whether you're a beginner or looking to
+            upgrade your skills, our classes are designed to help you create
+            with confidence.
+          </p>
+
+          <a href="Book.html" class="classes-gold-button">
+            ENROLL NOW <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="classes-hero-side">
+          Skills<br />that last<br />a lifetime <i class="bi bi-heart-fill"></i>
+        </div>
       </div>
     </section>
 
-    <!-- CLASSES -->
+    <!-- =========================================================
+                         OUR CLASSES
+    ========================================================= -->
 
-    <section class="page-content">
+    <section class="classes-list-section">
       <div class="container">
-        <h2 class="section-title center-title">OUR COURSES</h2>
+        <div class="classes-heading">
+          <h2>OUR CLASSES</h2>
+          <p>
+            Choose the level that fits your goals and start your tailoring
+            journey today.
+          </p>
+        </div>
 
         <div class="row g-4">
-          <!-- BASIC -->
+          <!-- BEGINNER -->
 
-          <div class="col-lg-6">
-            <div class="class-card">
-              <i class="bi bi-scissors"></i>
+          <div class="col-lg-4 col-12">
+            <div class="class-level-card">
+              <div class="class-level-top">
+                <div class="class-level-image">
+                  <img
+                    src="tailoring image/classesBegineer.jpeg"
+                    alt="Beginner tailoring class"
+                  />
+                </div>
 
-              <h3>BASIC TAILORING</h3>
+                <div class="class-level-info">
+                  <i class="bi bi-scissors"></i>
+                  <h3>BEGINNER<br />CLASSES</h3>
+                  <h5>Build Your Foundation</h5>
+                  <p>
+                    Perfect for those with no prior experience. Learn the basics
+                    of hand sewing, machine sewing, measurements and simple
+                    garment construction.
+                  </p>
+                </div>
+              </div>
 
-              <p>
-                Learn the fundamentals of tailoring and develop confidence using
-                a sewing machine.
-              </p>
+              <div class="class-level-meta">
+                Duration: 3 months <span>|</span> Level: Beginner
+              </div>
+            </div>
+          </div>
 
-              <ul>
-                <li>Machine handling</li>
+          <!-- INTERMEDIATE -->
 
-                <li>Measurements</li>
+          <div class="col-lg-4 col-12">
+            <div class="class-level-card">
+              <div class="class-level-top">
+                <div class="class-level-image">
+                  <img
+                    src="tailoring image/classesIntermediate.jpeg"
+                    alt="Intermediate tailoring class"
+                  />
+                </div>
 
-                <li>Fabric cutting</li>
+                <div class="class-level-info">
+                  <i class="bi bi-person-standing-dress"></i>
+                  <h3>INTERMEDIATE<br />CLASSES</h3>
+                  <h5>Build Your Confidence</h5>
+                  <p>
+                    Take your skills to the next level. Learn advanced
+                    techniques like fitting, pattern adjustments, lining and
+                    professional finishing methods.
+                  </p>
+                </div>
+              </div>
 
-                <li>Basic stitching</li>
-
-                <li>Simple dress making</li>
-              </ul>
+              <div class="class-level-meta">
+                Duration: 3 months <span>|</span> Level: Intermediate
+              </div>
             </div>
           </div>
 
           <!-- ADVANCED -->
 
-          <div class="col-lg-6">
-            <div class="class-card">
-              <i class="bi bi-award"></i>
+          <div class="col-lg-4 col-12">
+            <div class="class-level-card">
+              <div class="class-level-top">
+                <div class="class-level-image">
+                  <img
+                    src="tailoring image/classeAdvance.jpeg"
+                    alt="Advanced tailoring class"
+                  />
+                </div>
 
-              <h3>ADVANCED TAILORING</h3>
+                <div class="class-level-info">
+                  <i class="bi bi-vector-pen"></i>
+                  <h3>ADVANCED<br />CLASSES</h3>
+                  <h5>Master Your Art</h5>
+                  <p>
+                    For experienced learners who want to specialize. Learn
+                    couture techniques, complex draping, bridal wear, and custom
+                    design development.
+                  </p>
+                </div>
+              </div>
 
-              <p>
-                Improve your tailoring skills and learn professional
-                dress-making techniques.
-              </p>
-
-              <ul>
-                <li>Advanced stitching</li>
-
-                <li>Dress designing</li>
-
-                <li>Embroidery</li>
-
-                <li>Professional finishing</li>
-
-                <li>Advanced garment making</li>
-              </ul>
+              <div class="class-level-meta">
+                Duration: 6 months <span>|</span> Level: Advanced
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <a href="contact.html" class="gold-button"> JOIN CLASSES </a>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- =========================================================
+                         CLASS BENEFITS
+    ========================================================= -->
 
-    <footer>
+    <section class="class-benefits-section">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img
-              src="tailoring image/Logo2.png"
-              alt="Mary's Tailoring Studio"
-            />
+        <div class="classes-heading light">
+          <h2>CLASS BENEFITS</h2>
+        </div>
+
+        <div class="row g-4 benefits-row">
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="bi bi-award"></i></div>
+              <h3>Learn from Experienced Instructors</h3>
+              <p>Get hands-on guidance from industry professionals.</p>
+            </div>
           </div>
 
-          <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="bi bi-tools"></i></div>
+              <h3>Hands-On Practice</h3>
+              <p>Work with real fabrics and professional tools.</p>
+            </div>
+          </div>
 
-          <div class="social-icons">
-            <a href="#">
-              <i class="bi bi-facebook"></i>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="bi bi-person-standing-dress"></i>
+              </div>
+              <h3>Small Class Sizes</h3>
+              <p>Personalized attention and faster progress.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="bi bi-calendar-check"></i>
+              </div>
+              <h3>Flexible Scheduling</h3>
+              <p>Choose timings that fit your lifestyle.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="benefit-item">
+              <div class="benefit-icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h3>Certification</h3>
+              <p>Receive a certificate upon completion.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="benefit-item">
+              <div class="benefit-icon"><i class="bi bi-star"></i></div>
+              <h3>Lifetime Support</h3>
+              <p>Get ongoing guidance even after your course.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                         CURRICULUM
+    ========================================================= -->
+
+    <section class="curriculum-section">
+      <div class="container">
+        <div class="classes-heading">
+          <h2>CURRICULUM</h2>
+          <p class="plain-caps">WHAT YOU'LL LEARN</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-9">
+            <div class="row g-4">
+              <!-- BASICS -->
+
+              <div class="col-md-4">
+                <div class="curriculum-col">
+                  <div class="curriculum-title">
+                    <i class="bi bi-scissors"></i>
+                    <h3>BASICS &amp; ESSENTIALS</h3>
+                  </div>
+
+                  <ul>
+                    <li>Introduction to tools and fabrics</li>
+                    <li>Hand and machine sewing techniques</li>
+                    <li>Taking accurate measurements</li>
+                    <li>Basic garment construction</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CONSTRUCTION -->
+
+              <div class="col-md-4">
+                <div class="curriculum-col">
+                  <div class="curriculum-title">
+                    <i class="bi bi-person-standing-dress"></i>
+                    <h3>GARMENT CONSTRUCTION</h3>
+                  </div>
+
+                  <ul>
+                    <li>Darts, pleats and seams</li>
+                    <li>Necklines and sleeves</li>
+                    <li>Zippers and closures</li>
+                    <li>Fitting and alterations</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- ADVANCED -->
+
+              <div class="col-md-4">
+                <div class="curriculum-col">
+                  <div class="curriculum-title">
+                    <i class="bi bi-star-fill"></i>
+                    <h3>ADVANCED TECHNIQUES</h3>
+                  </div>
+
+                  <ul>
+                    <li>Pattern making and adjustments</li>
+                    <li>Draping and couture techniques</li>
+                    <li>Bridal and ethnic wear</li>
+                    <li>Custom design and styling</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="curriculum-image">
+              <img src="tailoring image/classesBook.jpeg"Sewing machine close-up" />
+              <div class="curriculum-script">From fabric<br />to fashion</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                    CLASS SCHEDULE & BOOKING
+    ========================================================= -->
+
+    <section class="booking-section">
+      <div class="container">
+        <div class="booking-box">
+          <div class="booking-left">
+            <h2>CLASS SCHEDULE &amp; BOOKING</h2>
+            <p class="booking-sub">
+              Start your journey at a time that works for you.
+            </p>
+
+            <div class="booking-info-row">
+              <div class="booking-info">
+                <i class="bi bi-calendar3"></i>
+                <div>
+                  <h4>Flexible Timings</h4>
+                  <p>Morning <span>|</span> Afternoon <span>|</span> Evening</p>
+                </div>
+              </div>
+
+              <div class="booking-info">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>Lajpat Nagar, Delhi, India</p>
+                </div>
+              </div>
+
+              <div class="booking-info">
+                <i class="bi bi-people"></i>
+                <div>
+                  <h4>Class Size</h4>
+                  <p>Small Groups<br />(5–8 Students)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-right">
+            <a href="Book.html" class="classes-dark-button">
+              BOOK YOUR CLASS <i class="bi bi-arrow-right"></i>
             </a>
 
-            <a href="#">
-              <i class="bi bi-instagram"></i>
-            </a>
+            <p>
+              Have questions? Contact us for more details<br />
+              and personalized guidance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <a href="#">
-              <i class="bi bi-whatsapp"></i>
+    <!-- =========================================================
+                     WHAT OUR STUDENTS SAY
+    ========================================================= -->
+
+    <section class="students-section">
+      <div class="container">
+        <div class="classes-heading small">
+          <h2>WHAT OUR STUDENTS SAY</h2>
+        </div>
+
+        <div class="student-card">
+          <div class="student-photo">
+            <img src="client1.jpeg" alt="Priya Sharma" />
+          </div>
+
+          <div class="student-text">
+            <i class="bi bi-quote"></i>
+            <p>
+              Mary's Tailoring Studio gave me the confidence and skills I needed
+              to turn my passion into a career. The instructors are amazing, and
+              the hands-on practice really makes a difference!
+            </p>
+            <strong>— Priya Sharma</strong>
+          </div>
+
+          <div class="student-stars">★★★★★</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                         FOOTER
+    ========================================================= -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="index.html">
+              <img
+                src="tailoring image/Logo2.png"
+                alt="Mary's Tailoring Studio"
+              />
             </a>
           </div>
+
+          <div class="footer-contact">
+            <p><i class="bi bi-telephone"></i> +91 9999829846</p>
+            <p><i class="bi bi-envelope"></i> marytailoringstudio@gmail.com</p>
+            <p><i class="bi bi-geo-alt"></i> Lajpat Nagar, Delhi, India</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="classes.html">CLASSES</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="Login.html">LOG IN</a>
+          </div>
+
+          <div class="footer-social">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Mary's Tailoring Studio. All Rights Reserved.
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="classes.js"></script>
   </body>
 </html>

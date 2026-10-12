@@ -21,14 +21,16 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
+    <!-- =========================================================
+                         NAVIGATION
+    ========================================================= -->
 
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
             src="tailoring image/Logo2.png"
-            alt="Mary's Tailoring Studio Logo"
+            alt="Mary's Tailoring Studio"
             class="logo-image"
           />
         </a>
@@ -38,6 +40,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -69,84 +74,341 @@
             </li>
 
             <li class="nav-item">
-              <a class="book-button" href="order.html"> BOOK AN ORDER </a>
+              <a class="nav-link" href="login.html">
+                <i class="bi bi-person-fill"></i> LOG IN
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="book-button" href="order.html">
+                <i class="bi bi-calendar3"></i>
+                BOOK AN ORDER
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- PAGE TITLE -->
+    <!-- =========================================================
+                         ABOUT HERO
+    ========================================================= -->
 
-    <section class="inner-page-hero">
+    <section class="about-hero">
+      <div class="about-hero-overlay"></div>
+
       <div class="container">
-        <p>Get to Know Me</p>
+        <div class="about-hero-content">
+          <p class="about-small-title">ABOUT US</p>
 
-        <h1>ABOUT ME</h1>
+          <h1>
+            MARY'S<br />
+            TAILORING STUDIO
+          </h1>
 
-        <span> Where Every Stitch Tells a Story </span>
+          <h4>
+            CRAFTING FITS
+            <span>•</span>
+            BUILDING CONFIDENCE
+          </h4>
+
+          <p class="about-intro">
+            At Mary's Tailoring Studio, we believe that every piece of clothing
+            tells a story. Our passion is to create custom, high-quality, and
+            beautifully tailored outfits that make you look and feel your best.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT CONTENT -->
+    <!-- =========================================================
+                         OUR STORY
+    ========================================================= -->
 
-    <section class="about-page">
+    <section class="about-story-section">
       <div class="container">
         <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <img
-              src="tailoring image/Image1.jpeg"
-              class="second-page-image"
-              alt="Mary's Tailoring Studio"
-            />
+          <div class="col-lg-5">
+            <div class="about-story-image">
+              <img
+                src="About2.jpeg"
+                alt="Tailoring at Mary's Tailoring Studio"
+              />
+            </div>
           </div>
 
-          <div class="col-lg-6">
-            <h2>MY STORY</h2>
+          <div class="col-lg-7">
+            <div class="about-heading-line">
+              <span></span>
+              <h2>OUR STORY</h2>
+            </div>
 
             <p>
-              I'm Mary, a professional tailor and instructor with years of
-              experience in stitching and design.
+              Mary's Tailoring Studio was founded with a simple dream — to bring
+              the art of tailoring closer to everyone. What started as a small
+              home studio has grown into a trusted place for custom stitching,
+              professional alterations, and personalized fashion services.
             </p>
 
             <p>
-              At Mary's Tailoring Studio, I provide custom stitching services,
-              dress design, alterations and professional tailoring classes.
+              With years of experience and a love for detail, we help clients
+              turn their ideas into beautiful, well-fitted garments. Every
+              stitch we make is a promise of quality, comfort, and care.
             </p>
-
-            <p>
-              I believe that every outfit should be comfortable, beautiful and
-              made with attention to detail.
-            </p>
-
-            <h3>MY MISSION</h3>
-
-            <p>
-              My mission is to provide quality tailoring services and help
-              people learn practical tailoring skills in a friendly environment.
-            </p>
-
-            <a href="order.html" class="black-button"> BOOK AN ORDER </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- =========================================================
+                       WHY CHOOSE US
+    ========================================================= -->
 
-    <footer>
+    <section class="about-why-section">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img
-              src="tailoring image/Logo2.png"
-              alt="Mary's Tailoring Studio"
-            />
+        <div class="about-center-heading">
+          <span></span>
+          <h2>WHY CHOOSE US?</h2>
+          <span></span>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1 -->
+
+          <div class="col-lg col-md-4 col-6">
+            <div class="about-why-card">
+              <div class="about-icon">
+                <i class="bi bi-gem"></i>
+              </div>
+
+              <h3>PRECISE FIT</h3>
+
+              <p>We ensure perfect fitting for every body type.</p>
+            </div>
           </div>
 
-          <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
+          <!-- 2 -->
 
-          <div class="social-icons">
+          <div class="col-lg col-md-4 col-6">
+            <div class="about-why-card">
+              <div class="about-icon">
+                <i class="bi bi-award"></i>
+              </div>
+
+              <h3>QUALITY</h3>
+
+              <p>High quality stitching with attention to detail.</p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+
+          <div class="col-lg col-md-4 col-6">
+            <div class="about-why-card">
+              <div class="about-icon">
+                <i class="bi bi-tag"></i>
+              </div>
+
+              <h3>AFFORDABLE</h3>
+
+              <p>Best quality services at reasonable prices.</p>
+            </div>
+          </div>
+
+          <!-- 4 -->
+
+          <div class="col-lg col-md-4 col-6">
+            <div class="about-why-card">
+              <div class="about-icon">
+                <i class="bi bi-person-heart"></i>
+              </div>
+
+              <h3>EXPERIENCED</h3>
+
+              <p>Years of experience in tailoring and fashion.</p>
+            </div>
+          </div>
+
+          <!-- 5 -->
+
+          <div class="col-lg col-md-4 col-6">
+            <div class="about-why-card">
+              <div class="about-icon">
+                <i class="bi bi-heart"></i>
+              </div>
+
+              <h3>CUSTOMER SATISFACTION</h3>
+
+              <p>Your happiness is our priority.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                         OUR VALUES
+    ========================================================= -->
+
+    <section class="about-values-section">
+      <div class="container-fluid p-0">
+        <div class="row g-0 align-items-stretch">
+          <div class="col-lg-6">
+            <div class="values-content">
+              <div class="values-title">
+                <span></span>
+                <h2>OUR VALUES</h2>
+              </div>
+
+              <p>
+                We stand for quality, trust, and personalized service. Every
+                client is special, and we treat them with care, respect, and
+                honesty.
+              </p>
+
+              <div class="values-quote">
+                Tailoring is not just a service,<br />
+                it’s our passion.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="values-image">
+              <img src="About3.jpeg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                       WHAT CLIENTS SAY
+    ========================================================= -->
+
+    <section class="about-reviews-section">
+      <div class="container">
+        <div class="about-center-heading">
+          <span></span>
+          <h2>WHAT OUR CLIENTS SAY</h2>
+          <span></span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="about-review-card">
+              <div class="review-person">
+                <img src="client1.jpeg" alt="Ayesha Khan" />
+              </div>
+
+              <div class="review-content">
+                <p>
+                  “Excellent stitching and perfect fitting. Mary is very
+                  professional and her work is outstanding!”
+                </p>
+
+                <strong>— AYESHA KHAN</strong>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-review-card">
+              <div class="review-person">
+                <img src="client2.jpeg" alt="Sana Ahmed" />
+              </div>
+
+              <div class="review-content">
+                <p>
+                  “I joined the tailoring classes and learned so much. Highly
+                  recommended!”
+                </p>
+
+                <strong>— SANA AHMED</strong>
+
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                         CALL TO ACTION
+    ========================================================= -->
+
+    <section class="about-cta-section">
+      <div class="container">
+        <h2>LET'S CREATE SOMETHING BEAUTIFUL TOGETHER</h2>
+
+        <p>
+          Whether you need a custom outfit, alteration, or want to learn
+          tailoring —<br />
+          we are here for you.
+        </p>
+
+        <a href="order.html" class="about-cta-button">
+          <i class="bi bi-calendar3"></i>
+          BOOK AN ORDER
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+                           FOOTER
+    ========================================================= -->
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- LOGO -->
+
+          <div class="footer-brand">
+            <a href="index.html">
+              <img
+                src="tailoring image/Logo2.png"
+                alt="Mary's Tailoring Studio"
+              />
+            </a>
+          </div>
+
+          <!-- CONTACT -->
+
+          <div class="footer-contact">
+            <p>
+              <i class="bi bi-telephone"></i>
+              +91 9999829846
+            </p>
+
+            <p>
+              <i class="bi bi-envelope"></i>
+              marytailoringstudio@gmail.com
+            </p>
+
+            <p>
+              <i class="bi bi-geo-alt"></i>
+              Lajpat Nagar, Delhi, India
+            </p>
+          </div>
+
+          <!-- QUICK LINKS -->
+
+          <div class="footer-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="services.html">SERVICES</a>
+            <a href="classes.html">CLASSES</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="login.html">LOG IN</a>
+          </div>
+
+          <!-- SOCIAL -->
+
+          <div class="footer-social">
             <a href="#">
               <i class="bi bi-facebook"></i>
             </a>
@@ -158,11 +420,20 @@
             <a href="#">
               <i class="bi bi-whatsapp"></i>
             </a>
+
+            <a href="#">
+              <i class="bi bi-youtube"></i>
+            </a>
           </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Mary's Tailoring Studio. All Rights Reserved.
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="about.js"></script>
   </body>
 </html>

@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login | Mary's Tailoring Studio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Script font for "Welcome Back" (falls back to cursive if offline) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Self-contained: do NOT also load style.css on this page -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================================================
+                         NAVBAR
+    ========================================================= -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="tailoring image/Logo2.png"
+            class="logo-image"
+            alt="Mary's Tailoring Studio"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">CLASSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Login.html">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="book-button" href="order.html">BOOK AN ORDER</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================================
+                         BRAND HEADER
+    ========================================================= -->
+
+    <header class="login-brand">
+      <div class="container">
+        <div class="brand-row">
+          <!-- left sprig -->
+          <svg class="sprig" viewBox="0 0 70 130" aria-hidden="true">
+            <path
+              d="M35 125 C32 95 36 60 28 8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+            <g fill="none" stroke="currentColor" stroke-width="1.1">
+              <ellipse
+                cx="20"
+                cy="30"
+                rx="6"
+                ry="12"
+                transform="rotate(-35 20 30)"
+              />
+              <ellipse
+                cx="40"
+                cy="42"
+                rx="6"
+                ry="12"
+                transform="rotate(35 40 42)"
+              />
+              <ellipse
+                cx="18"
+                cy="62"
+                rx="6"
+                ry="12"
+                transform="rotate(-40 18 62)"
+              />
+              <ellipse
+                cx="42"
+                cy="76"
+                rx="6"
+                ry="12"
+                transform="rotate(40 42 76)"
+              />
+              <ellipse
+                cx="20"
+                cy="96"
+                rx="6"
+                ry="12"
+                transform="rotate(-40 20 96)"
+              />
+            </g>
+          </svg>
+
+          <div class="brand-center">
+            <img
+              src="tailoring image/Logo2.png"
+              class="brand-logo"
+              alt="Mary's Tailoring Studio"
+            />
+
+            <div class="ornament"><span></span><i></i><span></span></div>
+
+            <p class="brand-tagline">
+              CUSTOM STITCHING <b>•</b> ALTERATIONS <b>•</b> TAILORING CLASSES
+            </p>
+          </div>
+
+          <!-- right sprig (mirrored) -->
+          <svg class="sprig flip" viewBox="0 0 70 130" aria-hidden="true">
+            <path
+              d="M35 125 C32 95 36 60 28 8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+            <g fill="none" stroke="currentColor" stroke-width="1.1">
+              <ellipse
+                cx="20"
+                cy="30"
+                rx="6"
+                ry="12"
+                transform="rotate(-35 20 30)"
+              />
+              <ellipse
+                cx="40"
+                cy="42"
+                rx="6"
+                ry="12"
+                transform="rotate(35 40 42)"
+              />
+              <ellipse
+                cx="18"
+                cy="62"
+                rx="6"
+                ry="12"
+                transform="rotate(-40 18 62)"
+              />
+              <ellipse
+                cx="42"
+                cy="76"
+                rx="6"
+                ry="12"
+                transform="rotate(40 42 76)"
+              />
+              <ellipse
+                cx="20"
+                cy="96"
+                rx="6"
+                ry="12"
+                transform="rotate(-40 20 96)"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+                         LOGIN CARD
+    ========================================================= -->
+
+    <main class="login-main">
+      <div class="container">
+        <div class="login-card">
+          <!-- ================= LEFT: FORM ================= -->
+
+          <div class="login-form-side">
+            <h1 class="welcome-title">Welcome Back</h1>
+            <p class="welcome-text">
+              Log in to your Mary's Tailoring Studio account and continue your
+              journey with us.
+            </p>
+
+            <!-- LOGIN FORM -->
+
+            <form id="loginForm" novalidate>
+              <div class="field" id="emailWrap">
+                <i class="bi bi-envelope field-icon"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  autocomplete="username"
+                  aria-label="Email Address"
+                  required
+                />
+              </div>
+              <p class="field-error" id="emailError"></p>
+
+              <div class="field" id="passwordWrap">
+                <i class="bi bi-lock field-icon"></i>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                  autocomplete="current-password"
+                  aria-label="Password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="eye-btn"
+                  id="togglePassword"
+                  aria-label="Show password"
+                >
+                  <i class="bi bi-eye"></i>
+                </button>
+              </div>
+              <p class="field-error" id="passwordError"></p>
+              <p class="caps-warning" id="capsWarning" hidden>
+                <i class="bi bi-exclamation-triangle"></i> Caps Lock is on
+              </p>
+
+              <div class="remember-row">
+                <label class="check">
+                  <input type="checkbox" id="remember" />
+                  <span class="box"><i class="bi bi-check-lg"></i></span>
+                  Remember Me
+                </label>
+
+                <a href="#" id="forgotLink" class="gold-link"
+                  >Forgot Password?</a
+                >
+              </div>
+
+              <p class="form-msg" id="formMsg" role="alert"></p>
+
+              <button type="submit" class="login-btn" id="loginBtn">
+                <span class="btn-label">LOGIN</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+
+            <!-- FORGOT PASSWORD (hidden until the link is clicked) -->
+
+            <form id="forgotForm" class="forgot-panel" novalidate hidden>
+              <h2>Reset your password</h2>
+              <p>Enter your email and we'll send you a reset link.</p>
+
+              <div class="field">
+                <i class="bi bi-envelope field-icon"></i>
+                <input
+                  type="email"
+                  id="resetEmail"
+                  placeholder="Email Address"
+                  aria-label="Email for password reset"
+                  required
+                />
+              </div>
+              <p class="field-error" id="resetError"></p>
+
+              <button type="submit" class="login-btn">
+                <span class="btn-label">SEND RESET LINK</span>
+              </button>
+
+              <button type="button" class="back-link" id="backToLogin">
+                <i class="bi bi-arrow-left"></i> Back to login
+              </button>
+            </form>
+
+            <div class="or-divider"><span>OR</span></div>
+
+            <button type="button" class="google-btn" id="googleBtn">
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                aria-hidden="true"
+              >
+                <path
+                  fill="#4285F4"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                />
+              </svg>
+              Continue with Google
+            </button>
+
+            <p class="create-text">
+              Don't have an account?
+              <a href="signup.html" class="gold-link">Create Account</a>
+            </p>
+
+            <div class="privacy-note">
+              <i class="bi bi-shield-lock"></i>
+              <div>
+                <strong>Your privacy and security matter to us.</strong>
+                <span
+                  >We never share your personal information with third
+                  parties.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= RIGHT: IMAGE ================= -->
+
+          <div class="login-image-side">
+            <img
+              src="login.jpeg"
+              alt="Green dress on a mannequin with scissors and thread"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================================================
+                         FOOTER
+    ========================================================= -->
+
+    <footer class="login-footer">
+      <div class="container">
+        <div class="lf-grid">
+          <!-- brand -->
+
+          <div class="lf-brand">
+            <a href="index.html">
+              <img
+                src="tailoring image/Logo2.png"
+                alt="Mary's Tailoring Studio"
+              />
+            </a>
+            <div class="ornament small"><span></span><i></i><span></span></div>
+            <p>Perfect Fit <b>•</b> Quality Stitching<br />Timeless Style</p>
+          </div>
+
+          <!-- quick links -->
+
+          <div class="lf-col">
+            <h3>QUICK LINKS</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.jpeg" class="current">login</a></li>
+            </ul>
+          </div>
+
+          <!-- get in touch -->
+
+          <div class="lf-col">
+            <h3>GET IN TOUCH</h3>
+            <p><i class="bi bi-telephone"></i> +91 9999829846</p>
+            <p><i class="bi bi-envelope"></i> marytailoringstudio@gmail.com</p>
+            <p><i class="bi bi-geo-alt"></i> Lajpat Nagar, Delhi, India</p>
+          </div>
+
+          <!-- follow us -->
+
+          <div class="lf-col">
+            <h3>FOLLOW US</h3>
+            <div class="lf-social">
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+            <p class="lf-script">Tailored with Care</p>
+          </div>
+        </div>
+
+        <div class="lf-bottom">
+          <span class="ornament small"><span></span><i></i><span></span></span>
+          <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
+          <span class="ornament small"><span></span><i></i><span></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

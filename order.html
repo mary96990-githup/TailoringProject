@@ -2,72 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Gallery | Mary's Tailoring Studio</title>
+    <title>Book an Order | Mary's Tailoring Studio</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- your single stylesheet (contact CSS is pasted at the bottom of it) -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <!-- NAVBAR -->
-
+  <body class="order-page">
+    <!-- ================= NAVBAR (same as other pages) ================= -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
             src="tailoring image/Logo2.png"
+            alt="Mary's Tailoring Studio Logo"
             class="logo-image"
-            alt="Mary's Tailoring Studio"
           />
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link" href="index.html"> HOME </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
+              <a class="nav-link" href="about.html"> ABOUT </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="services.html">SERVICES</a>
+              <a class="nav-link" href="services.html"> SERVICES </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="classes.html">CLASSES</a>
+              <a class="nav-link" href="classes.html"> CLASSES </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link active" href="gallery.html">GALLERY</a>
+              <a class="nav-link" href="gallery.html"> GALLERY </a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
+              <a class="nav-link" href="contact.html"> CONTACT </a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html"> LOGIN </a>
+            </li>
             <li class="nav-item">
               <a class="book-button" href="order.html"> BOOK AN ORDER </a>
             </li>
@@ -76,105 +77,436 @@
       </div>
     </nav>
 
-    <!-- HERO -->
-
-    <section class="inner-page-hero">
+    <!-- ================= HERO ================= -->
+    <section class="od-hero">
       <div class="container">
-        <p>Our Work</p>
-
-        <h1>OUR GALLERY</h1>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-
-    <section class="page-content">
-      <div class="container">
-        <h2 class="section-title center-title">TAILORING & DESIGN</h2>
-
-        <div class="row g-3">
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery1.jpg"
-              class="full-gallery-image"
-              alt="Tailoring work"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery2.jpg"
-              class="full-gallery-image"
-              alt="Dress design"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery3.jpg"
-              class="full-gallery-image"
-              alt="Sewing"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery4.jpg"
-              class="full-gallery-image"
-              alt="Embroidery"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery5.jpg"
-              class="full-gallery-image"
-              alt="Tailoring tools"
-            />
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <img
-              src="images/gallery6.jpg"
-              class="full-gallery-image"
-              alt="Traditional dress"
-            />
+        <div class="od-hero-inner">
+          <svg
+            class="od-sprig"
+            viewBox="0 0 80 150"
+            fill="none"
+            stroke="#c99b3c"
+            stroke-width="2"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <path d="M40 146 C38 110 42 70 40 8" />
+            <path d="M40 120 C22 116 12 102 10 88 C26 90 38 102 40 120Z" />
+            <path d="M40 100 C58 96 68 82 70 68 C54 70 42 82 40 100Z" />
+            <path d="M40 78 C22 74 14 60 12 46 C28 48 38 60 40 78Z" />
+            <path d="M40 56 C56 52 64 40 66 28 C52 30 42 40 40 56Z" />
+            <path d="M40 34 C30 30 26 20 26 12 C34 14 40 22 40 34Z" />
+            <path d="M40 8 C46 14 46 22 40 28 C34 22 34 14 40 8Z" />
+          </svg>
+          <div>
+            <p class="od-script">Book an</p>
+            <h1>ORDER</h1>
+            <span class="od-rule"></span>
+            <p class="od-hero-p">
+              Tell us what you need, and we'll handle<br />the rest with care,
+              skill and elegance.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ================= FORM + HOW IT WORKS ================= -->
+    <section class="od-main">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <div class="od-card" id="odFormWrap">
+              <h2 class="od-title">PLACE YOUR ORDER <span></span></h2>
+              <p class="od-sub">
+                Fill in the details below and we'll get back to you soon.
+              </p>
 
+              <form id="odForm" novalidate>
+                <!-- 1 -->
+                <h3 class="od-step">
+                  <b>1</b><i class="bi bi-person"></i> CUSTOMER DETAILS
+                </h3>
+                <div class="row g-3">
+                  <div class="col-md-4 od-field">
+                    <label for="odName"
+                      ><i class="bi bi-person"></i> Full Name *</label
+                    >
+                    <input
+                      id="odName"
+                      name="name"
+                      type="text"
+                      placeholder="Enter your full name"
+                      autocomplete="name"
+                    /><small class="od-error"></small>
+                  </div>
+                  <div class="col-md-4 od-field">
+                    <label for="odEmail"
+                      ><i class="bi bi-envelope"></i> Email Address *</label
+                    >
+                    <input
+                      id="odEmail"
+                      name="email"
+                      type="email"
+                      placeholder="Enter your email"
+                      autocomplete="email"
+                    /><small class="od-error"></small>
+                  </div>
+                  <div class="col-md-4 od-field">
+                    <label for="odPhone"
+                      ><i class="bi bi-telephone"></i> Phone Number *</label
+                    >
+                    <input
+                      id="odPhone"
+                      name="phone"
+                      type="tel"
+                      inputmode="tel"
+                      placeholder="Enter your phone number"
+                      autocomplete="tel"
+                    /><small class="od-error"></small>
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <h3 class="od-step">
+                  <b>2</b><i class="bi bi-scissors"></i> SERVICE SELECTION
+                </h3>
+                <div class="od-svcs" id="odSvcs">
+                  <label class="od-svc">
+                    <input
+                      type="radio"
+                      name="service"
+                      value="Custom Stitching"
+                    />
+                    <span class="od-svc-box"
+                      ><i class="bi bi-scissors"></i><b>Custom Stitching</b
+                      ><em class="od-radio"></em
+                    ></span>
+                  </label>
+                  <label class="od-svc">
+                    <input type="radio" name="service" value="Alterations" />
+                    <span class="od-svc-box"
+                      ><i class="bi bi-arrows-collapse-vertical"></i
+                      ><b>Alterations</b><em class="od-radio"></em
+                    ></span>
+                  </label>
+                  <label class="od-svc">
+                    <input type="radio" name="service" value="Dress Design" />
+                    <span class="od-svc-box"
+                      ><i class="bi bi-palette"></i><b>Dress Design</b
+                      ><em class="od-radio"></em
+                    ></span>
+                  </label>
+                  <label class="od-svc">
+                    <input type="radio" name="service" value="Bridal Dresses" />
+                    <span class="od-svc-box"
+                      ><i class="bi bi-gem"></i><b>Bridal Dresses</b
+                      ><em class="od-radio"></em
+                    ></span>
+                  </label>
+                  <label class="od-svc">
+                    <input
+                      type="radio"
+                      name="service"
+                      value="Tailoring Classes"
+                    />
+                    <span class="od-svc-box"
+                      ><i class="bi bi-mortarboard"></i><b>Tailoring Classes</b
+                      ><em class="od-radio"></em
+                    ></span>
+                  </label>
+                </div>
+                <small class="od-error od-block" id="odSvcErr"></small>
+
+                <!-- 3 -->
+                <h3 class="od-step">
+                  <b>3</b><i class="bi bi-bag"></i> GARMENT / ORDER DETAILS
+                </h3>
+                <div class="row g-3">
+                  <div class="col-md-4 od-field">
+                    <label for="odGarment"
+                      ><i class="bi bi-tag"></i> Garment Type *</label
+                    >
+                    <select id="odGarment" name="garment">
+                      <option value="">Select garment type</option>
+                      <option>Blouse</option>
+                      <option>Salwar Suit</option>
+                      <option>Kurti</option>
+                      <option>Lehenga</option>
+                      <option>Gown / Dress</option>
+                      <option>Saree Blouse / Fall-Pico</option>
+                      <option>Men's Suit</option>
+                      <option>Shirt / Trouser</option>
+                      <option>Kids Wear</option>
+                      <option>Other</option></select
+                    ><small class="od-error"></small>
+                  </div>
+                  <div class="col-md-3 od-field">
+                    <label for="odQty">Quantity *</label>
+                    <select id="odQty" name="qty">
+                      <option value="">Select quantity</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10+</option></select
+                    ><small class="od-error"></small>
+                  </div>
+                  <div class="col-md-5 od-field">
+                    <label for="odInstr">Special Instructions</label>
+                    <textarea
+                      id="odInstr"
+                      name="instructions"
+                      rows="3"
+                      placeholder="Tell us about your design, fabric, size, or any special requests"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <!-- 4 -->
+                <h3 class="od-step">
+                  <b>4</b><i class="bi bi-calendar3"></i> PREFERRED APPOINTMENT
+                </h3>
+                <div class="row g-3">
+                  <div class="col-md-6 od-field">
+                    <label for="odDate"
+                      ><i class="bi bi-calendar-event"></i> Date *</label
+                    >
+                    <input id="odDate" name="date" type="date" /><small
+                      class="od-error"
+                    ></small>
+                  </div>
+                  <div class="col-md-6 od-field">
+                    <label for="odTime"
+                      ><i class="bi bi-clock"></i> Time *</label
+                    >
+                    <select id="odTime" name="time">
+                      <option value="">Select time</option></select
+                    ><small class="od-error"></small>
+                  </div>
+                </div>
+
+                <!-- 5 -->
+                <h3 class="od-step">
+                  <b>5</b><i class="bi bi-tag"></i> BUDGET &amp; NOTES
+                </h3>
+                <div class="od-field">
+                  <label for="odBudget">Your Budget (Optional)</label>
+                  <input
+                    id="odBudget"
+                    name="budget"
+                    type="text"
+                    placeholder="e.g. Under ₹3000, ₹3000 – ₹8000, or your range"
+                  />
+                </div>
+                <div class="od-field">
+                  <label for="odNotes">Additional Notes (Optional)</label>
+                  <textarea
+                    id="odNotes"
+                    name="notes"
+                    rows="3"
+                    placeholder="Any other details you'd like us to know"
+                  ></textarea>
+                </div>
+
+                <div class="od-submit-row">
+                  <span></span>
+                  <button type="submit" class="od-submit" id="odSubmit">
+                    <i class="bi bi-send-fill"></i> SUBMIT ORDER
+                  </button>
+                  <span></span>
+                </div>
+                <p
+                  class="od-status"
+                  id="odStatus"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+
+              <!-- success panel -->
+              <div class="od-success" id="odSuccess" hidden>
+                <div class="od-check"><i class="bi bi-check-lg"></i></div>
+                <h3>Order Request Received!</h3>
+                <p>
+                  Thank you, <b id="odSName"></b>. Your reference is
+                  <b id="odRef"></b>.
+                </p>
+                <p class="od-success-small">
+                  WhatsApp should have opened with your order details — press
+                  <b>Send</b> there to confirm. We'll reply within 24 hours.
+                </p>
+                <button type="button" class="od-submit" id="odAnother">
+                  PLACE ANOTHER ORDER
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <aside class="od-card od-side">
+              <div class="od-side-img"></div>
+              <h2 class="od-how-title">HOW IT WORKS</h2>
+              <ol class="od-how">
+                <li>
+                  <span class="od-num">1</span><i class="bi bi-chat-dots"></i>
+                  <div>
+                    <h4>SUBMIT YOUR ORDER</h4>
+                    <p>
+                      Fill out the form with your details, service and
+                      preferences.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="od-num">2</span
+                  ><i class="bi bi-clipboard-check"></i>
+                  <div>
+                    <h4>WE REVIEW & CONFIRM</h4>
+                    <p>
+                      We'll get back to you within 24 hours with details and a
+                      quote (if needed).
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="od-num">3</span><i class="bi bi-rulers"></i>
+                  <div>
+                    <h4>MEASUREMENT & DESIGN</h4>
+                    <p>
+                      We take your measurements (or use your provided ones) and
+                      start the process.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span class="od-num">4</span><i class="bi bi-bag-check"></i>
+                  <div>
+                    <h4>YOUR ORDER IS READY</h4>
+                    <p>
+                      We'll notify you when it's ready for pickup or delivery.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AFTER SUBMIT ================= -->
+    <section class="od-after">
+      <div class="container">
+        <div class="od-after-head">
+          <span></span>
+          <h2>WHAT HAPPENS AFTER YOU SUBMIT?</h2>
+          <span></span>
+        </div>
+        <div class="row g-0">
+          <div class="col-6 col-lg-3 od-after-item">
+            <i class="bi bi-envelope"></i>
+            <h3>1. CONFIRMATION</h3>
+            <p>
+              You'll get an email or call within 24 hours to confirm your
+              request.
+            </p>
+          </div>
+          <div class="col-6 col-lg-3 od-after-item">
+            <i class="bi bi-rulers"></i>
+            <h3>2. MEASUREMENTS & DETAILS</h3>
+            <p>
+              We'll discuss your design, fabric, measurements and any special
+              requirements.
+            </p>
+          </div>
+          <div class="col-6 col-lg-3 od-after-item">
+            <i class="bi bi-scissors"></i>
+            <h3>3. CRAFTING PROCESS</h3>
+            <p>Our skilled tailors get to work with precision and care.</p>
+          </div>
+          <div class="col-6 col-lg-3 od-after-item">
+            <i class="bi bi-bag-heart"></i>
+            <h3>4. READY FOR YOU</h3>
+            <p>
+              We'll notify you when your order is complete and ready for pickup
+              or delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GET IN TOUCH ================= -->
+    <section class="od-touch-wrap">
+      <div class="container">
+        <div class="od-touch">
+          <h2>GET IN TOUCH</h2>
+          <div class="row g-3 align-items-center">
+            <div class="col-md-4">
+              <p>
+                <i class="bi bi-telephone"></i>
+                <a href="tel:+919999829846">+91 99998 29846</a>
+              </p>
+              <p>
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:marystailoringstudio@gmail.com"
+                  >marystailoringstudio@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p><i class="bi bi-geo-alt"></i> Lajpat Nagar, Delhi, India</p>
+              <p>
+                <i class="bi bi-whatsapp"></i>
+                <a
+                  href="https://wa.me/919999829846"
+                  target="_blank"
+                  rel="noopener"
+                  >+91 99998 29846</a
+                >
+              </p>
+            </div>
+            <div class="col-md-4 text-md-end">
+              <p class="od-script od-touch-script">
+                Your Vision, Our Craft <i class="bi bi-heart"></i>
+              </p>
+              <a href="contact.html" class="od-visit"
+                ><i class="bi bi-geo-alt-fill"></i> Visit Our Studio</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER (same as other pages) ================= -->
     <footer>
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
-            <img
-              src="tailoring image/Logo2.png"
-              alt="Mary's Tailoring Studio"
-            />
+            <a href="index.html"
+              ><img
+                src="tailoring image/Logo2.png"
+                alt="Mary's Tailoring Studio"
+            /></a>
           </div>
-
           <p>© 2026 Mary's Tailoring Studio. All Rights Reserved.</p>
-
           <div class="social-icons">
-            <a href="#">
-              <i class="bi bi-facebook"></i>
-            </a>
-
-            <a href="#">
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a href="#">
-              <i class="bi bi-whatsapp"></i>
-            </a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="order.js"></script>
   </body>
 </html>
